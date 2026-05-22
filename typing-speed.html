@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing speed Tester</title>
+    <title>Typing Speed Tester</title>
     
     <meta name="description" content="Test your professional typing speed (WPM) and accuracy with Elite Typing Studio. High-end typing engine with detailed performance reports.">
     <meta name="keywords" content="typing test, speed typing, wpm calculator, professional typing, accuracy test, 2026 typing tools">
@@ -13,120 +13,238 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <script src="https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Hind+Siliguri:wght@400;700&display=swap');
         
+        /* মার্জিন ও প্যাডিং জিরো ফিক্স */
+        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
+        
         :root { --bg-light: #f8fafc; --accent: #2563eb; }
-        body { font-family: 'Outfit', 'Hind Siliguri', sans-serif; background: var(--bg-light); color: #1e293b; }
+        body { 
+            font-family: 'Outfit', 'Hind Siliguri', sans-serif; 
+            background: var(--bg-light); 
+            color: #1e293b; 
+            display: block !important;
+            padding: 24px 16px !important;
+        }
         .glow-text { color: #1d4ed8; text-shadow: 0 0 10px rgba(37, 99, 235, 0.1); font-weight: 800; }
         .hero-title { background: linear-gradient(to right, #1e40af, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-panel { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(37, 99, 235, 0.1); border-radius: 2.5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05); }
-        .display-text { background: #ffffff; border: 2px solid #e2e8f0; border-radius: 1.5rem; padding: 25px; font-size: 1.4rem; line-height: 1.8; color: #64748b; }
-        .typing-input { border: 2px solid #2563eb; border-radius: 1.2rem; outline: none; transition: 0.3s; }
+        
+        .glass-panel { 
+            background: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(20px); 
+            border: 1px solid rgba(37, 99, 235, 0.1); 
+            border-radius: 2.5rem !important; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05); 
+            padding: 32px !important;
+        }
+        
+        .display-text { 
+            background: #ffffff; 
+            border: 2px solid #e2e8f0; 
+            border-radius: 1.5rem !important; 
+            padding: 25px !important; 
+            font-size: 1.4rem; 
+            line-height: 1.8; 
+            color: #64748b; 
+        }
+        .typing-input { 
+            border: 2px solid #2563eb; 
+            border-radius: 1.2rem !important; 
+            outline: none; 
+            transition: 0.3s; 
+            padding: 24px !important;
+        }
         .typing-input:focus { box-shadow: 0 0 25px rgba(37, 99, 235, 0.15); }
-        .stat-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.2rem; padding: 15px; text-align: center; }
+        
+        .stat-card { 
+            background: #ffffff; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 1.2rem !important; 
+            padding: 15px !important; 
+            text-align: center; 
+        }
         .highlight-correct { color: #10b981; font-weight: 700; }
         .highlight-wrong { color: #ef4444; text-decoration: underline; background: rgba(239, 68, 68, 0.05); }
-        .btn-gradient { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); transition: all 0.4s; }
+        .btn-gradient { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); transition: all 0.4s; padding: 20px 64px !important; border-radius: 1.75rem !important; }
+        
         #resultCapture { background: #ffffff; padding: 50px; border-radius: 30px; width: 600px; position: fixed; left: -9999px; border: 1px solid #e2e8f0; }
-        .nav-link { font-weight: 700; font-size: 13px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .nav-link { font-weight: 700; font-size: 13px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; text-decoration: none; }
         .nav-link:hover { color: #2563eb; }
+
+        /* নো-গ্যাপ রেসপন্সিভ অ্যাড জোন */
+        .ad-zone {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            margin: 15px auto !important;
+            padding: 0 !important;
+            clear: both;
+            overflow: hidden;
+        }
+        .ad-zone iframe, .ad-zone ins { display: inline-block; min-height: 0px; }
+
+        .flex-ad-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            margin: 20px auto !important;
+            padding: 0 !important;
+        }
     </style>
 </head>
-<body class="p-4">
+<body>
 
-    <nav class="max-w-6xl mx-auto w-full flex justify-between items-center py-6 px-4">
+    <div class="ad-zone">
+        <script>
+          atOptions = {
+            'key' : 'af68843b76517bf06501f2675e28c230',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/af68843b76517bf06501f2675e28c230/invoke.js"></script>
+    </div>
+
+    <div class="ad-zone">
+        <script>
+          atOptions = {
+            'key' : '8f5a5062f41818ce64c1a11030133401',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/8f5a5062f41818ce64c1a11030133401/invoke.js"></script>
+    </div>
+
+    <nav class="max-w-6xl mx-auto w-full flex justify-between items-center" style="padding-top: 24px !important; padding-bottom: 24px !important;">
         <div class="text-2xl font-black italic hero-title">ELITE STUDIO</div>
-        <div class="hidden md:flex gap-8">
+        <div class="hidden md:flex" style="gap: 32px !important;">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">WPM Guide</a>
             <a href="#" class="nav-link">Practice</a>
             <a href="#" class="nav-link">Contact</a>
         </div>
-        <button onclick="toggleLang()" id="langBtn" class="bg-blue-50 text-blue-600 px-6 py-2 rounded-full font-black text-xs border border-blue-100 uppercase">BN</button>
+        <button onclick="toggleLang()" id="langBtn" class="bg-blue-50 text-blue-600 rounded-full font-black text-xs border border-blue-100 uppercase" style="padding: 8px 24px !important;">BN</button>
     </nav>
 
     <div class="max-w-6xl w-full mx-auto">
-        <header class="text-center mt-10 mb-16">
-            <h1 id="mainTitle" class="text-5xl md:text-8xl font-black hero-title mb-4 tracking-tighter uppercase italic leading-none">Elite <span class="glow-text">Typing</span> Studio</h1>
+        <header class="text-center" style="margin-top: 40px !important; margin-bottom: 48px !important;">
+            <h1 id="mainTitle" class="text-5xl md:text-8xl font-black hero-title uppercase italic leading-none" style="margin-bottom: 16px !important;">Elite <span class="glow-text">Typing</span> Studio</h1>
             <p class="text-slate-500 font-bold text-lg uppercase tracking-widest italic opacity-80">2026 Next-Gen Speed Verification Engine</p>
         </header>
 
-        <main class="glass-panel p-8 md:p-14 mb-12 relative overflow-hidden">
-            <div id="setupBox" class="mb-10 text-center">
-                <label id="selectLabel" class="block text-slate-500 text-xs font-black uppercase tracking-widest mb-4">Duration Selection:</label>
-                <div class="flex justify-center gap-4">
-                    <button onclick="setTime(30)" class="time-btn bg-white px-8 py-3 rounded-2xl border-2 border-slate-100 font-bold transition">30s</button>
-                    <button onclick="setTime(60)" class="time-btn bg-blue-600 text-white px-8 py-3 rounded-2xl border-2 border-blue-600 font-bold transition">60s</button>
-                    <button onclick="setTime(120)" class="time-btn bg-white px-8 py-3 rounded-2xl border-2 border-slate-100 font-bold transition">120s</button>
+        <div class="ad-zone" style="margin-bottom: 24px !important;">
+            <script>
+              atOptions = {
+                'key' : 'a5e06faacfb9b3dc7e904457b5f78406',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/a5e06faacfb9b3dc7e904457b5f78406/invoke.js"></script>
+        </div>
+
+        <main class="glass-panel relative overflow-hidden" style="margin-bottom: 48px !important;">
+            <div id="setupBox" style="margin-bottom: 40px !important; text-align: center;">
+                <label id="selectLabel" class="block text-slate-500 text-xs font-black uppercase tracking-widest" style="margin-bottom: 16px !important;">Duration Selection:</label>
+                <div class="flex justify-center" style="gap: 16px !important;">
+                    <button onclick="setTime(30)" class="time-btn bg-white py-3 rounded-2xl border-2 border-slate-100 font-bold transition" style="padding-left: 32px !important; padding-right: 32px !important;">30s</button>
+                    <button onclick="setTime(60)" class="time-btn bg-blue-600 text-white py-3 rounded-2xl border-2 border-blue-600 font-bold transition" style="padding-left: 32px !important; padding-right: 32px !important;">60s</button>
+                    <button onclick="setTime(120)" class="time-btn bg-white py-3 rounded-2xl border-2 border-slate-100 font-bold transition" style="padding-left: 32px !important; padding-right: 32px !important;">120s</button>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                <div class="stat-card"><p id="statTime" class="text-[10px] text-blue-600 font-black uppercase">Time Left</p><p id="timer" class="text-3xl font-black">60s</p></div>
-                <div class="stat-card"><p id="statWpm" class="text-[10px] text-blue-600 font-black uppercase">Speed WPM</p><p id="wpm" class="text-3xl font-black">0</p></div>
-                <div class="stat-card"><p id="statAcc" class="text-[10px] text-blue-600 font-black uppercase">Accuracy</p><p id="accuracy" class="text-3xl font-black">100%</p></div>
-                <div class="stat-card"><p id="statError" class="text-[10px] text-blue-600 font-black uppercase">Errors</p><p id="errors" class="text-3xl font-black">0</p></div>
+            <div class="grid grid-cols-2 md:grid-cols-4" style="gap: 16px !important; margin-bottom: 40px !important;">
+                <div class="stat-card"><p id="statTime" class="text-[10px] text-blue-600 font-black uppercase" style="margin-bottom: 4px !important;">Time Left</p><p id="timer" class="text-3xl font-black">60s</p></div>
+                <div class="stat-card"><p id="statWpm" class="text-[10px] text-blue-600 font-black uppercase" style="margin-bottom: 4px !important;">Speed WPM</p><p id="wpm" class="text-3xl font-black">0</p></div>
+                <div class="stat-card"><p id="statAcc" class="text-[10px] text-blue-600 font-black uppercase" style="margin-bottom: 4px !important;">Accuracy</p><p id="accuracy" class="text-3xl font-black">100%</p></div>
+                <div class="stat-card"><p id="statError" class="text-[10px] text-blue-600 font-black uppercase" style="margin-bottom: 4px !important;">Errors</p><p id="errors" class="text-3xl font-black">0</p></div>
             </div>
 
-            <div id="textDisplay" class="display-text mb-8 italic">Please select test duration and press start...</div>
-            <textarea id="userInput" class="typing-input hidden w-full p-6 text-xl" rows="4" placeholder="Start typing here..." oninput="checkTyping()"></textarea>
+            <div id="textDisplay" class="display-text italic" style="margin-bottom: 32px !important;">Please select test duration and press start...</div>
+            <textarea id="userInput" class="typing-input hidden w-full text-xl" rows="4" placeholder="Start typing here..." oninput="checkTyping()"></textarea>
             
-            <div class="mt-10 flex flex-wrap justify-center gap-6">
-                <button id="startBtn" onclick="startTest()" class="btn-gradient px-16 py-5 text-white font-black rounded-3xl uppercase tracking-widest text-xl shadow-xl">Launch Test ✨</button>
-                <button id="stopBtn" onclick="endTest(true)" class="hidden bg-red-50 border-2 border-red-200 text-red-600 px-16 py-5 font-black rounded-3xl uppercase tracking-widest">Abort</button>
+            <div class="flex flex-wrap justify-center items-center" style="margin-top: 40px !important; gap: 24px !important;">
+                <button id="startBtn" onclick="startTest()" class="btn-gradient px-16 py-5 text-white font-black uppercase tracking-widest text-xl shadow-xl">Launch Test ✨</button>
+                <button id="stopBtn" onclick="endTest(true)" class="hidden bg-red-50 border-2 border-red-200 text-red-600 font-black rounded-3xl uppercase tracking-widest" style="padding: 20px 64px !important;">Abort</button>
             </div>
 
-            <div id="resultBox" class="hidden mt-12 p-10 bg-blue-50/50 rounded-[2rem] border-2 border-blue-100 text-center">
-                <h2 id="resTitle" class="text-4xl font-black mb-4 uppercase glow-text">Performance Verified</h2>
-                <p id="resDesc" class="text-slate-600 font-bold mb-10 text-xl"></p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <button onclick="downloadResult()" class="bg-blue-600 text-white px-12 py-4 rounded-2xl font-black uppercase text-xs tracking-widest">Download Report</button>
-                    <button onclick="location.reload()" class="bg-white border-2 border-slate-200 px-12 py-4 rounded-2xl font-black text-slate-500 uppercase text-xs tracking-widest">Restart</button>
+            <div class="ad-zone" style="margin-top: 32px !important;">
+                <script>
+                  atOptions = {
+                    'key' : '477db1ddaffe6205fad66ddcfeaec244',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
+            </div>
+
+            <div id="resultBox" class="hidden bg-blue-50/50 border-2 border-blue-100 text-center" style="margin-top: 48px !important; padding: 40px !important; border-radius: 2rem !important;">
+                <h2 id="resTitle" class="text-4xl font-black uppercase glow-text" style="margin-bottom: 16px !important;">Performance Verified</h2>
+                <p id="resDesc" class="text-slate-600 font-bold text-xl" style="margin-bottom: 40px !important;"></p>
+                <div class="flex flex-wrap justify-center" style="gap: 16px !important;">
+                    <button onclick="downloadResult()" class="bg-blue-600 text-white rounded-2xl font-black uppercase text-xs tracking-widest" style="padding: 16px 48px !important;">Download Report</button>
+                    <button onclick="location.reload()" class="bg-white border-2 border-slate-200 rounded-2xl font-black text-slate-500 uppercase text-xs tracking-widest" style="padding: 16px 48px !important;">Restart</button>
                 </div>
             </div>
         </main>
 
-        <article class="mt-20 glass-panel p-10 md:p-16">
-            <h2 id="seoTitle" class="text-4xl font-black text-blue-900 mb-10 uppercase italic glow-text">How to Master Typing Speed (WPM Guide)</h2>
-            
-            <div id="seoContent" class="grid md:grid-cols-2 gap-12 text-slate-600 leading-relaxed">
-                <div>
-                    <h3 class="text-xl font-bold text-blue-600 mb-4 uppercase">1. Understanding WPM (Words Per Minute)</h3>
-                    <p class="mb-4">WPM is the standard metric used to measure typing speed. Our Elite Studio uses the international standard where 1 Word = 5 Characters (including spaces). This ensures that whether you type short or long words, your speed assessment remains fair and accurate.</p>
-                    
-                    <h3 class="text-xl font-bold text-blue-600 mb-4 uppercase">2. Proper Finger Placement</h3>
-                    <p class="mb-4">To reach 80+ WPM, you must use the "Home Row" method. Your fingers should rest on A, S, D, F and J, K, L, ; keys. This muscle memory technique allows you to type without looking at the keyboard.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-blue-600 mb-4 uppercase">3. Importance of Accuracy</h3>
-                    <p class="mb-4">Speed is useless without accuracy. In a professional environment, errors lead to wasted time. We recommend focusing on 98% accuracy first, then slowly increasing your speed.</p>
-                    
-                    <div class="mt-6 overflow-hidden rounded-xl border border-blue-100">
-                        <table class="w-full text-sm">
-                            <thead class="bg-blue-600 text-white font-bold uppercase">
-                                <tr><th class="p-3">WPM Score</th><th class="p-3">Level</th></tr>
-                            </thead>
-                            <tbody class="bg-white">
-                                <tr class="border-b"><td class="p-3 text-center">0 - 30</td><td class="p-3 text-center">Beginner</td></tr>
-                                <tr class="border-b"><td class="p-3 text-center">31 - 50</td><td class="p-3 text-center">Average</td></tr>
-                                <tr class="border-b"><td class="p-3 text-center">51 - 80</td><td class="p-3 text-center">Professional</td></tr>
-                                <tr><td class="p-3 text-center">80+</td><td class="p-3 text-center">Elite Master</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+        <div class="flex-ad-container">
+            <div class="ad-zone" style="max-width: 340px;">
+                <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
+                <div id="container-14e25f0c3055f1c538d471f457a3c6ed"></div>
             </div>
-        </article>
 
-        <footer class="mt-20 text-center pb-20 border-t border-slate-200 pt-10">
-            <div class="flex flex-wrap justify-center gap-10 text-[11px] font-black uppercase tracking-[3px] text-slate-400 mb-8">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Cookie Policy</a>
-                <a href="#">About Us</a>
+            <div class="ad-zone" style="max-width: 170px;">
+                <script>
+                  atOptions = {
+                    'key' : '7adc470a63e21ae91144f6db960a0703',
+                    'format' : 'iframe',
+                    'height' : 300,
+                    'width' : 160,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://www.highperformanceformat.com/7adc470a63e21ae91144f6db960a0703/invoke.js"></script>
             </div>
-            <p class="text-blue-900/40 text-[10px] font-bold uppercase tracking-[5px]">
+
+            <div class="ad-zone" style="max-width: 170px;">
+                <script>
+                  atOptions = {
+                    'key' : 'b95a7fa8fa96adb7bd89e20fe3cb68c4',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                  };
+                </script>
+                <script src="https://www.highperformanceformat.com/b95a7fa8fa96adb7bd89e20fe3cb68c4/invoke.js"></script>
+            </div>
+        </div>
+
+        <footer class="text-center border-t border-slate-200" style="margin-top: 80px !important; padding-top: 40px !important; padding-bottom: 80px !important;">
+            <div class="flex flex-wrap justify-center uppercase tracking-[3px] text-slate-400" style="gap: 40px !important; font-size: 11px; font-weight: 900; margin-bottom: 32px !important;">
+                <a href="#" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: #64748b; text-decoration: none;">Terms of Use</a>
+                <a href="#" style="color: #64748b; text-decoration: none;">Cookie Policy</a>
+                <a href="#" style="color: #64748b; text-decoration: none;">About Us</a>
+            </div>
+            <p style="color: #1e3a8a; font-size: 10px; font-weight: bold; uppercase; letter-spacing: 5px; opacity: 0.4;">
                 © 2026 Elite Digital Studio • Powered by Nazrul
             </p>
         </footer>
@@ -247,7 +365,7 @@
         function toggleLang() {
             isEnglish = !isEnglish;
             document.getElementById('langBtn').innerText = isEnglish ? "BN" : "EN";
-            location.reload(); // Simple reload for lang toggle is better for Adsense stability
+            location.reload(); 
         }
     </script>
 </body>
