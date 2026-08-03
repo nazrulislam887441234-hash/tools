@@ -9,240 +9,178 @@
     <link rel="icon" type="image/png" href="https://tools.ghotimarket.com/logo.png">
 
     <meta name="description" content="GHOTI MARKET Tools offers professional digital utilities. 100% Secure and Free.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GHOTI MARKET Tools - Free Online Digital Tools">
+    <meta property="og:description" content="Free online tools including QR Generator, Age Calculator, Password Generator, Image Converter and more.">
+    <meta property="og:image" content="https://tools.ghotimarket.com/logo.png">
+    <meta property="og:url" content="https://tools.ghotimarket.com/">
+    <meta name="theme-color" content="#002855">
 
     <!-- Font Awesome + Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GHOTI MARKET Tools - Free Online Digital Tools">
-<meta property="og:description" content="Free online tools including QR Generator, Age Calculator, Password Generator, Image Converter and more.">
-<meta property="og:image" content="https://tools.ghotimarket.com/logo.png">
-<meta property="og:url" content="https://tools.ghotimarket.com/">
-<meta property="og:site_name" content="GHOTI MARKET Tools">
-<meta name="keywords" content="online tools, qr code generator, password generator, image converter, image resizer, word counter, typing speed test, age calculator, free online tools, ghoti market tools">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GHOTI MARKET Tools">
-<meta name="twitter:description" content="100% Free Professional Online Tools">
-<meta name="twitter:image" content="https://tools.ghotimarket.com/logo.png">
-<meta name="googlebot" content="index,follow,max-image-preview:large">
-<meta name="theme-color" content="#002855">
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"WebSite",
- "name":"GHOTI MARKET Tools",
- "url":"https://tools.ghotimarket.com/",
- "description":"Professional Free Online Digital Tools",
- "publisher":{
-   "@type":"Organization",
-   "name":"GHOTI MARKET",
-   "logo":{
-      "@type":"ImageObject",
-      "url":"https://tools.ghotimarket.com/logo.png"
-   }
- }
-}
-</script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'ghotinavy': '#002855',
-                        'ghotiorange': '#FF8C00',
-                        'ghotilight': '#00A8E8',
-                    },
-                    fontFamily: {
-                        sans: ['Outfit', 'Hind Siliguri', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-</head>
-<body class="bg-[#F0F4F8] font-sans antialiased text-gray-800">
 
-    <!-- Header Section -->
-    <header class="bg-gradient-to-br from-[#002855] via-[#004AAD] to-[#002855] text-white shadow-xl relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
-        
-        <div class="relative z-10 max-w-7xl mx-auto px-4 py-6 md:py-10">
-            <!-- Top Actions -->
-            <div class="flex flex-row justify-between items-center gap-4 mb-6">
-                <a href="https://ghotimarket.com" target="_blank" class="bg-[#FF8C00] hover:bg-orange-600 text-white font-bold py-2.5 px-5 rounded-xl transition-all shadow-md flex items-center gap-2 text-sm md:text-base">
+<style>
+    :root{--ghotinavy:#002855;--ghotiorange:#FF8C00;--ghotilight:#00A8E8;--bg:#F0F4F8}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Outfit','Hind Siliguri',sans-serif;background:var(--bg);color:#1e293b;line-height:1.6}
+    .container{max-width:1280px;margin:0 auto;padding:0 16px}
+    .gradient-bg{background:linear-gradient(135deg,#002855 0%,#004AAD 100%);position:relative;overflow:hidden}
+    .pattern-bg{position:absolute;inset:0;opacity:.1;background-image:url('https://www.transparenttextures.com/patterns/cubes.png')}
+    .btn{padding:10px 20px;border-radius:12px;font-weight:700;display:flex;align-items:center;gap:8px;transition:.3s;text-decoration:none}
+    .btn-orange{background:var(--ghotiorange);color:#fff;box-shadow:0 4px 6px rgba(0,0,0,.1)}
+    .btn-orange:hover{background:#e67e00;transform:translateY(-2px)}
+    .btn-glass{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(10px)}
+    .btn-glass:hover{background:rgba(255,255,255,.2)}
+    .search-box{display:flex;align-items:center;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:8px}
+    .search-box input{width:100%;background:transparent;border:none;color:#fff;outline:none;padding:0 12px;font-size:16px}
+    .search-box input::placeholder{color:#bfdbfe}
+    .tool-grid{display:grid;grid-template-columns:1fr;gap:16px;padding:32px 0}
+    @media(min-width:640px){.tool-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.tool-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+    .tool-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;transition:.3s;box-shadow:0 1px 3px rgba(0,0,0,.05);height:100%}
+    .tool-card:hover{transform:translateY(-5px);box-shadow:0 20px 25px rgba(0,0,0,.1);border-color:var(--ghotiorange)}
+    .icon-box{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0;transition:.3s}
+    .tool-card:hover .icon-box{transform:scale(1.05)}
+    .tool-title{font-size:16px;font-weight:700;color:var(--ghotinavy);transition:.3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .tool-card:hover .tool-title{color:var(--ghotiorange)}
+    .tool-desc{font-size:12px;color:#64748b;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;padding-top:32px;margin-top:48px;border-top:1px solid #d1d5db}
+    .footer-nav a{color:#4b5563;font-weight:600;font-size:14px;text-decoration:none;transition:.3s}
+    .footer-nav a:hover{color:var(--ghotinavy)}
+.banner{
+    display:block;
+    width:100%;
+    max-width:981px; /* আপনার আসল সাইজ */
+    margin:24px auto; /* মাঝখানে + উপরে নিচে গ্যাপ */
+    border-radius:16px;
+    overflow:hidden; /* কোনা গুলা গোল করার জন্য */
+    box-shadow:0 10px 25px rgba(0,40,85,.15);
+    transition:.3s;
+}
+.banner:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(255,140,0,.25); /* Orange shadow hover এ */
+}
+.banner img{
+    width:100%;
+    height:auto;
+    display:block; /* নিচের ফাঁকা জায়গা রিমুভ */
+}
+
+/* মোবাইলের জন্য */
+@media(max-width:768px){
+    .banner{
+        margin:16px auto;
+        border-radius:12px;
+    }
+}
+</style>
+</head>
+<body>
+
+    <header class="gradient-bg" style="color:#fff;box-shadow:0 10px 15px -3px rgba(0,0,0,.1)">
+        <div class="pattern-bg"></div>
+        <div class="container" style="position:relative;z-index:10;padding:24px 16px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:24px">
+                <a href="https://ghotimarket.com" target="_blank" class="btn btn-orange">
                     <i class="fa-solid fa-shop"></i> <span>GHOTI MARKET</span>
                 </a>
-                <button onclick="toggleGlobalLang()" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold py-2.5 px-4 rounded-xl transition-all flex items-center gap-2 text-sm md:text-base backdrop-blur-sm">
-                    <i class="fa-solid fa-globe text-[#00A8E8]"></i> <span id="langBtnText">বাংলা / EN</span>
+                <button onclick="toggleGlobalLang()" class="btn btn-glass">
+                    <i class="fa-solid fa-globe" style="color:var(--ghotilight)"></i> <span id="langBtnText">বাংলা / EN</span>
                 </button>
             </div>
-
-            <!-- Logo & Title -->
-            <div class="flex flex-col items-center text-center mt-2">
-                <div class="flex items-center gap-3 mb-3">
-                    <img src="https://tools.ghotimarket.com/logo.png" alt="Logo" class="w-14 h-14 md:w-16 md:h-16 rounded-2xl shadow-md bg-white p-1.5 object-contain">
-                    <h1 class="font-extrabold text-2xl md:text-4xl tracking-tight">GHOTI MARKET<span class="text-[#00A8E8]"> Tools</span></h1>
+            <div style="text-align:center">
+                <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:12px">
+                    <img src="https://tools.ghotimarket.com/logo.png" alt="Logo" style="width:56px;height:56px;border-radius:16px;background:#fff;padding:6px;box-shadow:0 4px 6px rgba(0,0,0,.1)">
+                    <h1 style="font-size:28px;font-weight:800">GHOTI MARKET<span style="color:var(--ghotilight)"> Tools</span></h1>
                 </div>
-                <p id="siteTagline" class="text-blue-100 max-w-xl text-sm md:text-base mb-6 px-2">Secure & Fast Digital Utility Hub — Professional solutions for your everyday tasks.</p>
-
-                <!-- Search Bar -->
-                <div class="w-full max-w-xl bg-white/15 backdrop-blur-md border border-white/25 rounded-2xl p-2 flex items-center shadow-inner">
-                    <input type="text" id="toolSearch" onkeyup="searchTools()" placeholder="Search Tools (e.g. Word, Age, QR...)" class="w-full bg-transparent text-white placeholder-blue-200 outline-none px-3 text-sm md:text-base">
-                    <i class="fa-solid fa-magnifying-glass text-[#00A8E8] text-lg pr-3"></i>
+                <p id="siteTagline" style="color:#dbeafe;max-width:600px;margin:0 auto 24px;font-size:14px">Secure & Fast Digital Utility Hub — Professional solutions for your everyday tasks.</p>
+                <div class="container" style="max-width:600px">
+                    <div class="search-box">
+                        <input type="text" id="toolSearch" onkeyup="searchTools()" placeholder="Search Tools (e.g. Word, Age, QR...)">
+                        <i class="fa-solid fa-magnifying-glass" style="color:var(--ghotilight);padding-right:12px"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content / Tools Grid -->
-    <main class="max-w-7xl mx-auto px-4 py-8">
-        <!-- Responsive Grid: Mobile এ ১ কলাম, Tab এ ২ কলাম, PC এ ৩ কলাম -->
-        <div id="toolGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-
-            <!-- 1 -->
-            <a href="https://tools.ghotimarket.com/word" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-indigo-500 to-indigo-700 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-file-word text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Pro Word Counter" data-bn="প্রো ওয়ার্ড কাউন্টার">Pro Word Counter</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Count words, lines, and characters." data-bn="শব্দ, লাইন এবং অক্ষর গণনা করুন।">Count words, lines, and characters.</p>
-                    </div>
+    <main class="container" style="padding:32px 16px">
+        <div id="toolGrid" class="tool-grid">
+<a class="banner" href="https://ghotimarket.com" target="_blank">
+    <img src="https://i.ibb.co/Y4jBRrSg/file-0000000002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET Banner">
+</a>
+            <a href="https://tools.ghotimarket.com/word.html" class="tool-item" data-tags="word counter text character line শব্দ কাউন্টার অক্ষর লাইন টেক্সট">
+                <div class="tool-card">
+                    <div class="icon-box" style="background:linear-gradient(135deg,#6366f1,#4f46e5)"><i class="fa-solid fa-file-word"></i></div>
+                    <div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Pro Word Counter" data-bn="প্রো ওয়ার্ড কাউন্টার">Pro Word Counter</h3><p class="tool-desc" data-en="Count words, lines, and characters." data-bn="শব্দ, লাইন এবং অক্ষর গণনা করুন।">Count words, lines, and characters.</p></div>
                 </div>
             </a>
 
-            <!-- 2 -->
-            <a href="https://tools.ghotimarket.com/typing-speed" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-keyboard text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Typing Speed Tester" data-bn="টাইপিং স্পিড টেস্টার">Typing Speed Tester</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Measure your typing speed and accuracy." data-bn="টাইপিং স্পিড এবং নির্ভুলতা পরীক্ষা করুন।">Measure your typing speed.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/typing-speed.html" class="tool-item" data-tags="typing speed test wpm keyboard টাইপিং স্পিড পরীক্ষা কিবোর্ড">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,#a855f7,#9333ea)"><i class="fa-solid fa-keyboard"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Typing Speed Tester" data-bn="টাইপিং স্পিড টেস্টার">Typing Speed Tester</h3><p class="tool-desc" data-en="Measure your typing speed and accuracy." data-bn="টাইপিং স্পিড এবং নির্ভুলতা পরীক্ষা করুন।">Measure your typing speed.</p></div></div>
             </a>
 
-            <!-- 3 -->
-            <a href="https://tools.ghotimarket.com/age-calculator" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-[#00A8E8] to-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-cake-candles text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Smart Age Calculator" data-bn="স্মার্ট এজ ক্যালকুলেটর">Smart Age Calculator</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Calculate exact age instantly." data-bn="আপনার সঠিক বয়স জানুন নিমেষেই।">Calculate exact age instantly.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/age-calculator.html" class="tool-item" data-tags="age calculator birth date birthday বয়স ক্যালকুলেটর জন্ম তারিখ জন্মদিন">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,var(--ghotilight),#2563eb)"><i class="fa-solid fa-cake-candles"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Smart Age Calculator" data-bn="স্মার্ট এজ ক্যালকুলেটর">Smart Age Calculator</h3><p class="tool-desc" data-en="Calculate exact age instantly." data-bn="আপনার সঠিক বয়স জানুন নিমেষেই।">Calculate exact age instantly.</p></div></div>
             </a>
 
-            <!-- 4 -->
-            <a href="https://tools.ghotimarket.com/strong-password" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-shield-halved text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Secure Password Generator" data-bn="সিকিউর পাসওয়ার্ড জেনারেটর">Secure Password Generator</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Generate high-security passwords." data-bn="হাই-সিকিউরিটি পাসওয়ার্ড তৈরি করুন।">Generate high-security passwords.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/strong-password.html" class="tool-item" data-tags="password generator secure strong pass পাসওয়ার্ড জেনারেটর নিরাপদ শক্তিশালী">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,#10b981,#059669)"><i class="fa-solid fa-shield-halved"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Secure Password Generator" data-bn="সিকিউর পাসওয়ার্ড জেনারেটর">Secure Password Generator</h3><p class="tool-desc" data-en="Generate high-security passwords." data-bn="হাই-সিকিউরিটি পাসওয়ার্ড তৈরি করুন।">Generate high-security passwords.</p></div></div>
+            </a>
+<a class="banner" href="https://ghotimarket.com" target="_blank">
+    <img src="https://i.ibb.co/Z1wx76qz/file-000000005f7481fa81447b31757cb967.png" alt="GHOTI MARKET Banner">
+</a>
+            <a href="https://tools.ghotimarket.com/stylish-name.html" class="tool-item" data-tags="stylish name fancy text generator স্টাইলিশ নাম ফ্যান্সি জেনারেটর">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,#ec4899,#db2777)"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Stylish Name Maker" data-bn="স্টাইলিশ নাম মেকার">Stylish Name Maker</h3><p class="tool-desc" data-en="Create fancy names for profiles." data-bn="প্রোফাইলের জন্য স্টাইলিশ নাম তৈরি করুন।">Create fancy names for profiles.</p></div></div>
             </a>
 
-            <!-- 5 -->
-            <a href="https://tools.ghotimarket.com/stylish-name" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-pink-500 to-pink-700 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Stylish Name Maker" data-bn="স্টাইলিশ নাম মেকার">Stylish Name Maker</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Create fancy names for profiles." data-bn="প্রোফাইলের জন্য স্টাইলিশ নাম তৈরি করুন।">Create fancy names for profiles.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/qr-code.html" class="tool-item" data-tags="qr code generator scanner কিউআর কোড জেনারেটর স্ক্যানার">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,var(--ghotiorange),#ea580c)"><i class="fa-solid fa-qrcode"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Professional QR Creator" data-bn="প্রফেশনাল কিউআর ক্রিয়েটর">Professional QR Creator</h3><p class="tool-desc" data-en="Generate custom QR codes for free." data-bn="বিনামূল্যে কাস্টম কিউআর কোড তৈরি করুন।">Generate custom QR codes for free.</p></div></div>
             </a>
 
-            <!-- 6 -->
-            <a href="https://tools.ghotimarket.com/qr-code" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-[#FF8C00] to-orange-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-qrcode text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Professional QR Creator" data-bn="প্রফেশনাল কিউআর ক্রিয়েটর">Professional QR Creator</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Generate custom QR codes for free." data-bn="বিনামূল্যে কাস্টম কিউআর কোড তৈরি করুন।">Generate custom QR codes for free.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/image-converter.html" class="tool-item" data-tags="image converter pdf jpg png webp ইমেজ কনভার্টার পিডিএফ ছবি">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,var(--ghotilight),#0891b2)"><i class="fa-solid fa-file-arrow-up"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Image & PDF Converter" data-bn="ইমেজ ও পিডিএফ কনভার্টার">Image & PDF Converter</h3><p class="tool-desc" data-en="Convert images to JPG, PNG, PDF." data-bn="ইমেজ থেকে জেপিজি, পিএনজি, পিডিএফ।">Convert images to JPG, PNG, PDF.</p></div></div>
             </a>
 
-            <!-- 7 -->
-            <a href="https://tools.ghotimarket.com/image-converter" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-[#00A8E8] to-cyan-600 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-file-arrow-up text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Image & PDF Converter" data-bn="ইমেজ ও পিডিএফ কনভার্টার">Image & PDF Converter</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Convert images to JPG, PNG, PDF." data-bn="ইমেজ থেকে জেপিজি, পিএনজি, পিডিএফ।">Convert images to JPG, PNG, PDF.</p>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 8 -->
-            <a href="https://tools.ghotimarket.com/image-resizer" class="tool-item group block">
-                <div class="bg-white border border-gray-200/80 rounded-2xl p-5 flex items-center gap-4 shadow-sm hover:shadow-xl hover:border-[#FF8C00] transition-all duration-300 h-full">
-                    <div class="bg-gradient-to-br from-rose-500 to-rose-700 text-white w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-transform">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
-                    <div class="flex-1 min-w-0">
-                        <h3 class="text-base font-bold text-[#002855] group-hover:text-[#FF8C00] transition-colors truncate" data-en="Professional Image Resizer" data-bn="প্রফেশনাল ইমেজ রিসাইজার">Professional Image Resizer</h3>
-                        <p class="text-gray-500 text-xs mt-1 line-clamp-2" data-en="Compress and resize photos in HD." data-bn="এইচডি কোয়ালিটিতে কম্প্রেস ও রিসাইজ করুন।">Compress and resize photos in HD.</p>
-                    </div>
-                </div>
+            <a href="https://tools.ghotimarket.com/image-resizer.html" class="tool-item" data-tags="image resizer photo compressor optimize hd ইমেজ রিসাইজার ছবি কম্প্রেস অপটিমাইজ">
+                <div class="tool-card"><div class="icon-box" style="background:linear-gradient(135deg,#f43f5e,#e11d48)"><i class="fa-solid fa-expand"></i></div><div style="flex:1;min-width:0"><h3 class="tool-title" data-en="Professional Image Resizer" data-bn="প্রফেশনাল ইমেজ রিসাইজার">Professional Image Resizer</h3><p class="tool-desc" data-en="Compress and resize photos in HD." data-bn="এইচডি কোয়ালিটিতে কম্প্রেস ও রিসাইজ করুন।">Compress and resize photos in HD.</p></div></div>
             </a>
         </div>
-
-        <!-- Footer Navigation Links -->
-        <nav class="flex flex-wrap justify-center border-t border-gray-300/60 gap-x-6 gap-y-2 pt-8 mt-12">
-            <a href="https://tools.ghotimarket.com/privacy-policy" class="text-gray-600 hover:text-[#002855] font-semibold text-sm transition-colors">Privacy Policy</a>
-            <a href="https://tools.ghotimarket.com/termsandcondition" class="text-gray-600 hover:text-[#002855] font-semibold text-sm transition-colors">Terms</a>
-            <a href="https://tools.ghotimarket.com/contact" class="text-gray-600 hover:text-[#002855] font-semibold text-sm transition-colors">Contact Us</a>
-            <a href="https://tools.ghotimarket.com/about" class="text-gray-600 hover:text-[#002855] font-semibold text-sm transition-colors">About Us</a>
+<a class="banner" href="https://ghotimarket.com" target="_blank">
+    <img src="https://i.ibb.co/ksx73gjm/file-00000000ac1881fb8025223362008d71.png" alt="GHOTI MARKET Banner">
+</a>
+        <nav class="footer-nav">
+            <a href="https://tools.ghotimarket.com/privacy-policy.html">Privacy Policy</a>
+            <a href="https://tools.ghotimarket.com/termsandcondition.html">Terms</a>
+            <a href="https://tools.ghotimarket.com/contact.html">Contact Us</a>
+            <a href="https://tools.ghotimarket.com/about.html">About Us</a>
         </nav>
 
-        <!-- Copyright Footer -->
-        <footer class="text-center py-6">
-            <p class="text-gray-500 text-sm mb-1">
-                Powered by <a href="https://ghotimarket.com" target="_blank" class="text-[#FF8C00] font-bold hover:underline">GHOTI MARKET</a>
-            </p>
-            <p class="text-gray-400 text-xs tracking-wider">© <span id="year"></span> GHOTI MARKET TOOLS | ALL RIGHTS RESERVED</p>
+        <footer style="text-align:center;padding:24px 0">
+            <p style="color:#64748b;font-size:14px;margin-bottom:4px">Powered by <a href="https://ghotimarket.com" target="_blank" style="color:var(--ghotiorange);font-weight:700;text-decoration:none">GHOTI MARKET</a></p>
+            <p style="color:#94a3b8;font-size:12px">© <span id="year"></span> GHOTI MARKET TOOLS | ALL RIGHTS RESERVED</p>
         </footer>
     </main>
 
-    <!-- Script Section -->
-    <script>
-        let currentLang = 'en';
-        function toggleGlobalLang() {
-            currentLang = currentLang === 'en'? 'bn' : 'en';
-            document.getElementById('siteTagline').innerText = currentLang === 'en'? "Secure & Fast Digital Utility Hub — Professional solutions for your everyday tasks." : "নিরাপদ ও দ্রুত ডিজিটাল ইউটিলিটি হাব — আপনার দৈনিক কাজের জন্য প্রফেশনাল সমাধান।";
-            document.getElementById('toolSearch').placeholder = currentLang === 'en'? "Search Tools (e.g. Word, Age, QR...)" : "টুল সার্চ করুন (যেমন: ওয়ার্ড, এজ, কিউআর...)";
-            document.querySelectorAll('h3[data-en]').forEach(el => el.innerText = el.getAttribute(`data-${currentLang}`));
-            document.querySelectorAll('p[data-en]').forEach(el => el.innerText = el.getAttribute(`data-${currentLang}`));
-        }
-
-        function searchTools() {
-            let input = document.getElementById('toolSearch').value.toLowerCase();
-            let items = document.getElementsByClassName('tool-item');
-            for (let i = 0; i < items.length; i++) {
-                let tags = items[i].getAttribute('data-tags') || "";
-                // parent element or wrapper check if needed, here items are tool-item directly
-                items[i].style.display = tags.toLowerCase().includes(input)? "block" : "none";
-            }
-        }
-        document.getElementById("year").innerText = new Date().getFullYear();
-    </script>
+<script>
+    let currentLang='en';
+    function toggleGlobalLang(){
+        currentLang=currentLang==='en'?'bn':'en';
+        document.getElementById('siteTagline').innerText=currentLang==='en'?"Secure & Fast Digital Utility Hub — Professional solutions for your everyday tasks.":"নিরাপদ ও দ্রুত ডিজিটাল ইউটিলিটি হাব — আপনার দৈনিক কাজের জন্য প্রফেশনাল সমাধান।";
+        document.getElementById('toolSearch').placeholder=currentLang==='en'?"Search Tools (e.g. Word, Age, QR...)":"টুল সার্চ করুন (যেমন: ওয়ার্ড, এজ, কিউআর...)";
+        document.querySelectorAll('.tool-title').forEach(el=>el.innerText=el.getAttribute(`data-${currentLang}`));
+        document.querySelectorAll('.tool-desc').forEach(el=>el.innerText=el.getAttribute(`data-${currentLang}`));
+    }
+    function searchTools(){
+        let input=document.getElementById('toolSearch').value.toLowerCase();
+        document.querySelectorAll('.tool-item').forEach(item=>{
+            let tags=item.getAttribute('data-tags')||"";
+            item.style.display=tags.toLowerCase().includes(input)?"block":"none";
+        });
+    }
+    document.getElementById("year").innerText=new Date().getFullYear();
+</script>
 </body>
 </html>
