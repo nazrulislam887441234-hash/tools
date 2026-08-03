@@ -3,171 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Resizer</title>
+    <title>Free AI Image Resizer & Compressor - Reduce Size 80% | GHOTI MARKET Tools</title>
 
-    <meta name="keywords" content="AI image resizer, professional photo optimizer, fast image compressor, high quality photo resizer, digital image processing, secure image tool, online photo editor, image scale tool, visual content optimization, web image compressor, bulk resizer, photography tools 2026, ultimate digital tools, advanced image scaling">
-    <meta name="description" content="Use our Professional AI Image Resizer to optimize your photos instantly. Maintain high definition quality while reducing storage footprint. Secure, fast, and 100% private.">
-    
-    <meta name="google-site-verification" content="ByykX6qaniRV46wT76IzXF1ibuTM_aa8Ylof0NFcOWY" />
-    <meta name="google-adsense-account" content="ca-pub-7690803775663030">
+    <meta name="description" content="Free AI Image Resizer by GHOTI MARKET. Compress and resize JPG, PNG, WEBP instantly in browser. 100% private, no upload. Reduce image size up to 80% with HD quality.">
+    <meta name="keywords" content="image resizer, image compressor, compress image, reduce image size, ai image optimizer, jpg to webp, ghoti market tools, free image tool bangladesh">
+    <meta name="author" content="GHOTI MARKET">
+    <meta name="theme-color" content="#002855">
+    <link rel="canonical" href="https://tools.ghotimarket.com/image-resizer.html">
+    <link rel="icon" href="https://tools.ghotimarket.com/logo.png">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tools.ghotimarket.com/image-resizer.html">
+    <meta property="og:site_name" content="GHOTI MARKET Tools">
+    <meta property="og:title" content="Free AI Image Resizer & Compressor - Reduce Size 80%">
+    <meta property="og:description" content="Compress and resize images instantly in your browser. 100% free and secure by GHOTI MARKET">
+    <meta property="og:image" content="https://tools.ghotimarket.com/logo.png">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GHOTI MARKET AI Image Resizer",
+      "url": "https://tools.ghotimarket.com/image-resizer.html",
+      "description": "Free AI tool to resize and compress images without losing quality",
+      "applicationCategory": "MultimediaApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+      "provider": { "@type": "Organization", "name": "GHOTI MARKET", "logo": "https://tools.ghotimarket.com/logo.png" }
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
-        body { 
-            font-family: 'Outfit', sans-serif; 
-            background: #fdfeff;
-            color: #1e293b;
-        }
-        .hero-gradient {
-            background: radial-gradient(circle at 10% 20%, #eff6ff 0%, #ffffff 100%);
-        }
-        .premium-card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
-        }
-        .content-section h2 {
-            color: #0f172a;
-            font-weight: 800;
-            font-size: 1.75rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .content-section p {
-            line-height: 1.8;
-            margin-bottom: 1.25rem;
-            color: #475569;
-        }
-        /* বিজ্ঞাপনের রেসপন্সিভ সেন্টার এলাইনমেন্ট */
-        .ad-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin: 1.5rem 0;
-            text-align: center;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap');
+        body { font-family: 'Outfit', sans-serif; background: #F0F4F8; color: #1e293b; }
+
+       .hero-gradient { background: radial-gradient(circle at 10% 20%, #EFF6FF 0%, #F0F4F8 100%); }
+       .premium-card { background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 20px 40px -15px rgba(0, 40, 85, 0.1); }
+       .btn-primary { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); transition: all 0.3s ease; }
+       .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0, 40, 85, 0.3); background: #FF8C00; }
+
+        /* Header */
+       .main-header { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+       .brand-logo img { width: 40px; height: 40px; border-radius: 10px; }
+
+        /* GHOTI Banner Ads */
+       .ghoti-banner{ display:block; width:100%; max-width:981px; margin:25px auto; border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,40,85,.15); transition:.3s; }
+       .ghoti-banner:hover{ transform:translateY(-4px); box-shadow:0 15px 35px rgba(255,140,0,.25); }
+       .ghoti-banner img{ width:100%; height:auto; display:block; }
     </style>
 </head>
 <body class="hero-gradient min-h-screen">
-    
+
+    <!-- Header with Logo -->
+    <header class="main-header py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="https://ghotimarket.com" class="brand-logo flex items-center gap-3 text-white font-black text-xl">
+                <img src="https://tools.ghotimarket.com/logo.png" alt="GHOTI MARKET Logo">
+                GHOTI MARKET <span class="text-[#00A8E8]">Tools</span>
+            </a>
+        </div>
+    </header>
+
     <div class="max-w-4xl mx-auto px-4 py-12">
         <div class="text-center mb-8">
-            <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">AI-Powered <span class="text-blue-600">Image Resizer</span></h1>
-            <p class="text-lg text-slate-500 max-w-xl mx-auto">Optimize your visual assets with our advanced scaling technology. Maintain 100% clarity with minimal file size.</p>
+            <h1 class="text-4xl md:text-5xl font-black text-[#002855] mb-3 tracking-tight">AI-Powered <span class="text-[#FF8C00]">Image Resizer</span></h1>
+            <p class="text-lg text-[#64748b] font-bold max-w-xl mx-auto">Compress & Resize Images Instantly. Maintain 100% HD Quality. 100% Private.</p>
         </div>
 
-        <div class="ad-container">
-            <div>
-                <script>
-                    atOptions = {
-                        'key' : '477db1ddaffe6205fad66ddcfeaec244',
-                        'format' : 'iframe',
-                        'height' : 250,
-                        'width' : 300,
-                        'params' : {}
-                    };
-                </script>
-                <script src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
-            </div>
-        </div>
+        <!-- GHOTI AD 1 - Top Banner -->
+        <a class="ghoti-banner" href="https://ghotimarket.com" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET - Best Digital Products">
+        </a>
 
         <div class="premium-card p-6 md:p-10 rounded-[3rem] mb-8">
             <div class="relative group mb-8">
                 <input type="file" id="imageInput" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
-                <div class="border-4 border-dashed border-blue-100 group-hover:border-blue-400 bg-blue-50/30 p-12 rounded-[2.5rem] text-center transition-all">
-                    <div class="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-blue-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                        </svg>
+                <div class="border-4 border-dashed border-[#00A8E8] group-hover:border-[#FF8C00] bg-[#f8fafc] p-12 rounded-[2.5rem] text-center transition-all">
+                    <div class="bg-[#002855] w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-cloud-arrow-up text-white text-2xl"></i>
                     </div>
-                    <p class="text-slate-700 font-extrabold text-xl">Drop your image here or click to browse</p>
-                    <p class="text-slate-400 text-sm mt-2 font-medium">Supports RAW, PNG, JPG, WebP (Ultra-Fast Processing)</p>
+                    <p class="text-[#002855] font-extrabold text-xl">Drop your image here or click to browse</p>
+                    <p class="text-[#64748b] text-sm mt-2 font-semibold">Supports JPG, PNG, WEBP, RAW - Max 20MB</p>
                 </div>
             </div>
 
-            <div id="infoArea" class="hidden animate-fade-in">
-                <div class="flex flex-col md:flex-row gap-6 items-center justify-between bg-slate-50 p-6 rounded-3xl border border-slate-200">
+            <div id="infoArea" class="hidden">
+                <div class="flex flex-col md:flex-row gap-6 items-center justify-between bg-[#F0F4F8] p-6 rounded-3xl border-[#e2e8f0]">
                     <div class="flex items-center gap-4">
                         <div id="previewThumb" class="w-16 h-16 rounded-xl bg-slate-200 bg-cover bg-center"></div>
                         <div>
-                            <p class="text-xs font-bold text-blue-600 uppercase tracking-widest">Selected File</p>
-                            <p id="fileName" class="font-bold text-slate-800 truncate max-w-[200px]-">-</p>
+                            <p class="text-xs font-black text-[#00A8E8] uppercase tracking-widest">Selected File</p>
+                            <p id="fileName" class="font-bold text-[#002855] truncate max-w-[200px]">-</p>
                         </div>
                     </div>
                     <div class="text-center md:text-right">
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Original Weight</p>
-                        <p id="fileSize" class="text-2xl font-black text-slate-900">-</p>
+                        <p class="text-xs font-black text-[#64748b] uppercase tracking-widest">Original Size</p>
+                        <p id="fileSize" class="text-2xl font-black text-[#002855]">-</p>
                     </div>
-                    <button id="resizeBtn" class="btn-primary w-full md:w-auto px-10 py-5 text-white font-black rounded-2xl shadow-lg">Start Optimization</button>
+                    <button id="resizeBtn" class="btn-primary w-full md:w-auto px-10 py-5 text-white font-black rounded-2xl shadow-lg"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Start Optimization</button>
                 </div>
             </div>
         </div>
 
-        <div class="ad-container">
-            <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
-            <div id="container-14e25f0c3055f1c538d471f457a3c6ed" style="width: 100%; max-width: 100%;"></div>
-        </div>
+        <!-- GHOTI AD 2 - Middle Banner -->
+        <a class="ghoti-banner" href="https://ghotimarket.com/tools" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0000000002a081f5b7c5996f48098b30.png" alt="Use 20+ Free Tools">
+        </a>
 
-        <article class="content-section prose prose-slate max-w-none border-t border-slate-100 pt-10">
-            <h2 id="understanding-image-optimization">Understanding Digital Image Optimization in 2026</h2>
-            <p>
-                In today's digital-first world, image optimization is not just a luxury—it's a fundamental necessity for web performance, SEO, and user experience. Our Professional AI Image Resizer leverages cutting-edge browser-side algorithms to ensure that your visual content remains crisp and professional, regardless of the device it's viewed on. When we talk about "resizing," we refer to two critical processes: altering the dimensions (pixels) and optimizing the data density (file size).
+        <article class="content-section prose prose-slate max-w-none border-t border-slate-200 pt-10">
+            <h2 class="text-[#002855] font-black text-2xl mb-4">Why Use GHOTI MARKET AI Image Resizer?</h2>
+            <p class="text-[#475569] leading-8">
+                In 2026, website speed is everything. Our AI Image Resizer helps you reduce image size by up to 80% without losing visual quality. Perfect for bloggers, e-commerce sellers, and students in Bangladesh. All processing happens in your browser - 100% private and secure.
             </p>
-            
-            <p>
-                Many traditional tools suffer from "lossy" compression, which often results in artifacts and blurriness. Our tool uses a "Smart-Scale" approach. It analyzes the color depth and frequency of your image to determine the optimal balance between visual fidelity and storage efficiency. This is particularly vital for developers, social media managers, and students who frequently handle high-resolution 4K images that need to be transformed into web-friendly formats without sacrificing the aesthetic appeal.
-            </p>
-
-            <h2>Why Visual Performance Matters for SEO</h2>
-            <p>
-                Search engines like Google prioritize "Core Web Vitals." One of the biggest hurdles to achieving a perfect score is "Largest Contentful Paint" (LCP), which is usually caused by unoptimized, heavy images. By utilizing this AI Resizer, you are directly contributing to faster page load speeds. A faster site leads to lower bounce rates, higher user retention, and ultimately, better rankings on search engine result pages. This is why professional photographers and web designers invest time in ensuring every byte is accounted for.
-            </p>
-
-            <h2>Security and Privacy: Your Data Stays with You</h2>
-            <p>
-                Privacy is at the core of Ultimate Tools Premium. Unlike other online platforms that upload your sensitive photos to remote servers, our tool operates entirely within your web browser. Using advanced WebAssembly and Web Workers, the compression occurs locally on your hardware. This means your personal photos, official documents, or private screenshots never leave your device. It is 100% secure, private, and lightning-fast, bypassing the need for slow uploads and risky data transfers.
-            </p>
-
-            <h2>Advanced Technical Features</h2>
-            <p>
-                What sets this tool apart is its ability to handle ultra-high-resolution files (up to 20MB) and convert them into manageable sizes instantly. Our algorithm handles:
-            </p>
-            <ul class="list-disc pl-6 mb-6 text-slate-600 space-y-2 font-medium">
-                <li>Automatic Aspect Ratio Retention: Never worry about stretched or distorted images.</li>
-                <li>Intelligent Pixel Interpolation: Smooths out edges during downsizing to prevent pixelation.</li>
-                <li>Metadata Stripping: Removes unnecessary EXIF data to further reduce file size without touching image quality.</li>
-                <li>Universal Compatibility: Works seamlessly across Android, iOS, Windows, and macOS browsers.</li>
+            <h2 class="text-[#002855] font-black text-2xl mt-8 mb-4">Key Features</h2>
+            <ul class="list-disc pl-6 mb-6 text-[#475569] space-y-2 font-semibold">
+                <li><b>AI Smart Compression:</b> Automatically finds best quality vs size ratio</li>
+                <li><b>100% Private:</b> No upload to server. Files never leave your device</li>
+                <li><b>Bulk Ready:</b> Handles high resolution 4K images up to 20MB</li>
+                <li><b>SEO Boost:</b> Faster images = Better Google Ranking & Core Web Vitals</li>
             </ul>
-
-            <h2>How to achieve the best results?</h2>
-            <p>
-                To get the most out of our optimizer, start with the highest quality source possible. Our AI works best when it has more data to analyze. Whether you are prepping a profile picture for a professional application or optimizing thousands of product photos for an e-commerce store, the workflow is designed for efficiency. Simply upload, let the AI calculate the best compression ratio, and download your optimized file. No registration, no subscription, and no hidden fees—just pure utility.
-            </p>
-
-            <h2>The Future of Web Utilities</h2>
-            <p>
-                As we move further into 2026, the demand for instant, high-quality digital processing is only increasing. Ultimate Tools is committed to evolving alongside these needs. Our Image Resizer is part of a larger ecosystem of premium utilities designed to empower creators in Bangladesh and across the globe. By focusing on lightweight architecture and maximum user value, we ensure that digital tools remain accessible to everyone.
-            </p>
         </article>
 
-        <footer class="mt-20 py-10 border-t border-slate-100 text-center">
-            <p class="text-slate-400 text-xs tracking-[0.3em] font-bold uppercase mb-4">© 2026 ULTIMATE TOOLS PREMIUM | BUILT FOR PERFORMANCE</p>
-            <div class="h-1.5 w-16 bg-blue-600 mx-auto rounded-full"></div>
+        <!-- GHOTI AD 3 - Bottom Banner -->
+        <a class="ghoti-banner" href="https://ghotimarket.com/shop" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Shop Software and Gift Cards">
+        </a>
+
+        <footer class="mt-20 py-10 border-t border-slate-200 text-center">
+            <p class="text-[#002855] text-xs tracking-[0.3em] font-black uppercase mb-2">© <span id="year"></span> GHOTI MARKET TOOLS | BUILT FOR PERFORMANCE</p>
+            <p class="text-[#64748b] text-xs">Made with ❤️ in Bangladesh</p>
         </footer>
     </div>
 
     <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
         const imageInput = document.getElementById('imageInput');
         const infoArea = document.getElementById('infoArea');
         let selectedFile;
@@ -177,32 +151,21 @@
             if(selectedFile) {
                 document.getElementById('fileName').innerText = selectedFile.name;
                 document.getElementById('fileSize').innerText = (selectedFile.size / 1024).toFixed(2) + " KB";
-                
-                // Preview thumbnail
                 const reader = new FileReader();
                 reader.onload = (event) => {
                     document.getElementById('previewThumb').style.backgroundImage = `url(${event.target.result})`;
                 };
                 reader.readAsDataURL(selectedFile);
-
                 infoArea.classList.remove('hidden');
-                infoArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         });
 
         document.getElementById('resizeBtn').onclick = async () => {
-            const options = {
-                maxSizeMB: 1, 
-                maxWidthOrHeight: 1920,
-                useWebWorker: true,
-                initialQuality: 0.85 
-            };
-
+            const options = { maxSizeMB: 1, maxWidthOrHeight: 1920, useWebWorker: true, initialQuality: 0.85 };
             try {
                 const btn = document.getElementById('resizeBtn');
-                btn.innerHTML = `<svg class="animate-spin h-5 w-5 text-white inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Optimizing...`;
+                btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin mr-2"></i> Optimizing...`;
                 btn.disabled = true;
-
                 const compressedFile = await imageCompression(selectedFile, options);
                 const reader = new FileReader();
                 reader.readAsDataURL(compressedFile);
@@ -211,18 +174,15 @@
                     localStorage.setItem('oldSize', (selectedFile.size / 1024).toFixed(2));
                     localStorage.setItem('newSize', (compressedFile.size / 1024).toFixed(2));
                     localStorage.setItem('imgName', selectedFile.name);
-                    
                     location.assign("image-resizerdownload.html");
                 };
-            } catch (err) { 
-                alert('Optimization failed! Please try another image.'); 
-                document.getElementById('resizeBtn').innerText = "Start Optimization";
+            } catch (err) {
+                alert('Optimization failed! Please try another image.');
+                document.getElementById('resizeBtn').innerHTML = `<i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Start Optimization`;
                 document.getElementById('resizeBtn').disabled = false;
             }
         };
     </script>
-
-    <script src="https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js"></script>
 
 </body>
 </html>
