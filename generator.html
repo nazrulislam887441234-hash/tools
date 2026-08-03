@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rendom Password Generator</title>
-    
-    <script src="https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js"></script>
+    <title>Create Strong Random Passwords free</title>
+
+    <meta name="description" content="Generate strong, secure and random passwords instantly with GHOTI MARKET Password Generator. 100% free, no ads, no signup. Custom length up to 100 characters. Copy with 1 click.">
+    <meta name="keywords" content="password generator, strong password, random password generator, secure password, free password tool, ghoti market tools">
+    <meta name="author" content="GHOTI MARKET">
+    <meta name="theme-color" content="#002855">
+    <link rel="canonical" href="https://tools.ghotimarket.com/password-generator.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tools.ghotimarket.com/password-generator.html">
+    <meta property="og:site_name" content="GHOTI MARKET Tools">
+    <meta property="og:title" content="Free Password Generator - Create Strong Random Passwords">
+    <meta property="og:description" content="Generate military-grade secure passwords instantly. Free tool by GHOTI MARKET">
+    <meta property="og:image" content="https://tools.ghotimarket.com/logo.png">
+
+    <link rel="icon" type="image/png" href="https://tools.ghotimarket.com/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --primary: #2563eb;
-            --bg: #ffffff;
-            --card-bg: #f8fafc;
+            --primary: #002855;
+            --accent: #FF8C00;
+            --bg: #F0F4F8;
+            --card-bg: #ffffff;
             --text: #1e293b;
-            --accent: #3b82f6;
-            --success: #22c55e;
+            --success: #10b981;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Outfit', sans-serif;
             background-color: var(--bg);
             color: var(--text);
             padding: 15px;
             display: flex;
-            flex-col;
+            flex-direction: column;
             align-items: center;
             width: 100%;
-            overflow-x: hidden;
         }
 
         .main-wrapper {
@@ -40,9 +55,9 @@
 
         .generator-box {
             background: var(--card-bg);
-            padding: 30px;
+            padding: 35px;
             border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 40px -15px rgba(0,40,85,0.1);
             border: 1px solid #e2e8f0;
             text-align: center;
             width: 100%;
@@ -50,209 +65,167 @@
             margin-top: 10px;
         }
 
-        h1 { font-size: 26px; color: var(--primary); margin-bottom: 20px; font-weight: 800; }
+        h1 { 
+            font-size: 28px; 
+            background: linear-gradient(135deg, #002855 0%, #004AAD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px; 
+            font-weight: 900; 
+        }
+        .subtitle { color: #64748b; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
 
         .input-area { margin-bottom: 20px; }
-        .input-area p { font-weight: 600; margin-bottom: 10px; font-size: 15px; }
+        .input-area p { font-weight: 800; margin-bottom: 10px; font-size: 13px; color: #002855; text-transform: uppercase; letter-spacing: 1px; }
 
         input[type="number"] {
-            width: 120px;
-            padding: 12px;
+            width: 140px;
+            padding: 14px;
             border: 2px solid #cbd5e1;
-            border-radius: 10px;
+            border-radius: 14px;
             font-size: 18px;
             text-align: center;
+            font-weight: 800;
             outline: none;
             transition: 0.3s;
         }
-        input[type="number"]:focus { border-color: var(--primary); }
+        input[type="number"]:focus { border-color: var(--accent); box-shadow: 0 0 15px rgba(255,140,0,0.15); }
 
-        .btn-group { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
         .gen-btn, .copy-btn {
-            padding: 14px 28px;
+            padding: 16px 32px;
             border: none;
-            border-radius: 12px;
-            font-size: 15px;
-            font-weight: 600;
+            border-radius: 14px;
+            font-size: 14px;
+            font-weight: 900;
             cursor: pointer;
             transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .gen-btn {
-            background: var(--primary);
+            background: linear-gradient(135deg, #002855 0%, #004AAD 100%);
             color: white;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            box-shadow: 0 10px 15px -3px rgba(0,40,85,0.2);
         }
-        .gen-btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .gen-btn:hover { background: var(--accent); transform: translateY(-2px); }
 
         .copy-btn {
-            background: #64748b;
-            color: white;
+            background: #e2e8f0;
+            color: #002855;
             display: none;
         }
-        .copy-btn:hover { background: #475569; }
+        .copy-btn:hover { background: var(--success); color: white; }
 
         #password-display {
-            margin-top: 20px;
-            padding: 18px;
-            background: #fff;
-            border: 2px dashed #e2e8f0;
-            border-radius: 12px;
+            margin-top: 25px;
+            padding: 20px;
+            background: #F8FAFC;
+            border: 2px dashed #cbd5e1;
+            border-radius: 14px;
             font-family: 'Courier New', monospace;
             font-size: 20px;
-            color: #0f172a;
-            min-height: 40px;
+            color: #002855;
+            font-weight: 800;
+            min-height: 50px;
             word-break: break-all;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        /* অ্যাড স্লট নো-গ্যাপ এবং রেসপন্সিভ ডিজাইন */
-        .ad-zone {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            text-align: center;
-            margin: 15px auto;
-            padding: 0;
-            clear: both;
-            overflow: hidden;
+        /* GHOTI MARKET Banner Style */
+       .ghoti-banner{
+            display:block;
+            width:100%;
+            max-width:981px;
+            margin:24px auto;
+            border-radius:16px;
+            overflow:hidden;
+            box-shadow:0 10px 25px rgba(0,40,85,.15);
+            transition:.3s;
         }
-        .ad-zone iframe, .ad-zone ins { display: inline-block; min-height: 0px; }
-
-        .flex-ad-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            width: 100%;
-            margin: 15px auto;
+       .ghoti-banner:hover{
+            transform:translateY(-4px);
+            box-shadow:0 15px 35px rgba(255,140,0,.25);
         }
+       .ghoti-banner img{ width:100%; height:auto; display:block; }
 
         @media (max-width: 600px) {
-            h1 { font-size: 22px; }
+            h1 { font-size: 24px; }
             .gen-btn, .copy-btn { width: 100%; }
         }
     </style>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GHOTI MARKET Password Generator",
+      "url": "https://tools.ghotimarket.com/password-generator.html",
+      "description": "Free tool to generate strong, random, secure passwords instantly",
+      "applicationCategory": "SecurityApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+      "provider": { "@type": "Organization", "name": "GHOTI MARKET" }
+    }
+    </script>
 </head>
 <body>
 
 <div class="main-wrapper">
 
-    <div class="ad-zone">
-        <script>
-          atOptions = {
-            'key' : 'af68843b76517bf06501f2675e28c230',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/af68843b76517bf06501f2675e28c230/invoke.js"></script>
-    </div>
-
-    <div class="ad-zone">
-        <script>
-          atOptions = {
-            'key' : '8f5a5062f41818ce64c1a11030133401',
-            'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/8f5a5062f41818ce64c1a11030133401/invoke.js"></script>
-    </div>
+    <!-- GHOTI MARKET AD 1 - Top Banner -->
+    <a class="ghoti-banner" href="https://ghotimarket.com" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0000000002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET - Secure Digital Products">
+    </a>
 
     <div class="generator-box">
-        <h1>Ultimate Password Shield</h1>
+        <h1>Password Generator</h1>
+        <p class="subtitle">Professional Security Engine</p>
         
-        <div class="ad-zone my-2">
-            <script>
-              atOptions = {
-                'key' : 'a5e06faacfb9b3dc7e904457b5f78406',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/a5e06faacfb9b3dc7e904457b5f78406/invoke.js"></script>
-        </div>
+        <!-- GHOTI MARKET AD 2 - In Content -->
+        <a class="ghoti-banner" style="margin: 20px 0;" href="https://ghotimarket.com/tools" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0000000002a081f5b7c5996f48098b30.png" alt="20+ Free Tools by GHOTI MARKET">
+        </a>
 
         <div class="input-area">
-            <p>Set Password Length (Recommended: 12-16)</p>
-            <input type="number" id="lengthInput" value="12" min="6" max="100">
+            <p>Set Password Length (6 - 100)</p>
+            <input type="number" id="lengthInput" value="16" min="6" max="100">
         </div>
         <div class="btn-group">
             <button class="gen-btn" onclick="generatePass()">Generate Secure Password</button>
             <button class="copy-btn" id="copyBtn" onclick="copyToClipboard()">Copy Password</button>
         </div>
-        <div id="password-display">Click the button to start...</div>
+        <div id="password-display">Click button to generate password...</div>
 
-        <div class="ad-zone" style="margin-top: 20px;">
-            <script>
-              atOptions = {
-                'key' : '477db1ddaffe6205fad66ddcfeaec244',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
+        <!-- FAQ for SEO -->
+        <div style="margin-top:30px;text-align:left">
+            <h3 style="color:#002855;font-size:18px;font-weight:900;margin-bottom:10px">Why use GHOTI MARKET Password Generator?</h3>
+            <p style="color:#475569;font-size:13px">Our generator uses `window.crypto` for true randomness. Create passwords with uppercase, lowercase, numbers and symbols. 100% free and secure.</p>
         </div>
     </div>
 
-    <div class="w-full flex-ad-container">
-        <div class="ad-zone" style="max-width: 340px;">
-            <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
-            <div id="container-14e25f0c3055f1c538d471f457a3c6ed"></div>
-        </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : '7adc470a63e21ae91144f6db960a0703',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/7adc470a73e21ae91144f6db960a0703/invoke.js"></script>
-        </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : 'b95a7fa8fa96adb7bd89e20fe3cb68c4',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/b95a7fa8fa96adb7bd89e20fe3cb68c4/invoke.js"></script>
-        </div>
-    </div>
+    <!-- GHOTI MARKET AD 3 - Bottom Banner -->
+    <a class="ghoti-banner" href="https://ghotimarket.com/shop" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Shop Premium Software at GHOTI MARKET">
+    </a>
 </div>
 
 <script>
     function generatePass() {
         const len = document.getElementById('lengthInput').value;
-        const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~[]{};:,.<>?";
+        const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=";
         let password = "";
         
         let finalLen = parseInt(len);
-        if(isNaN(finalLen) || finalLen < 1) finalLen = 12;
+        if(isNaN(finalLen) || finalLen < 6) finalLen = 12;
         if(finalLen > 100) finalLen = 100;
 
         let values = new Uint32Array(finalLen);
-        window.crypto.getRandomValues(values);
+        window.crypto.getRandomValues(values); // Military Grade Security
 
         for (let i = 0; i < finalLen; i++) {
             password += charset.charAt(values[i] % charset.length);
@@ -260,34 +233,34 @@
 
         const display = document.getElementById('password-display');
         display.innerText = password;
-        display.style.borderColor = "#22c55e"; 
+        display.style.borderColor = "#10b981"; 
         
         document.getElementById('copyBtn').style.display = "inline-block";
     }
 
     function copyToClipboard() {
         const passText = document.getElementById('password-display').innerText;
-        if (passText === "Click the button to start...") return;
+        if (passText === "Click button to generate password...") return;
 
-        const el = document.createElement('textarea');
-        el.value = passText;
-        document.body.appendChild(el);
-        el.select();
-        el.setSelectionRange(0, 99999); 
-        document.execCommand('copy');
-        document.body.removeChild(el);
+        navigator.clipboard.writeText(passText); // Modern Copy
 
         const copyBtn = document.getElementById('copyBtn');
-        const originalText = copyBtn.innerText;
-        copyBtn.innerText = "Copied!";
-        copyBtn.style.background = "#22c55e";
+        copyBtn.innerText = "Copied! ✓";
+        copyBtn.style.background = "#10b981";
+        copyBtn.style.color = "white";
         
         setTimeout(() => {
-            copyBtn.innerText = originalText;
-            copyBtn.style.background = "#64748b";
+            copyBtn.innerText = "Copy Password";
+            copyBtn.style.background = "#e2e8f0";
+            copyBtn.style.color = "#002855";
         }, 2000);
     }
 </script>
+
+<footer style="margin-top:30px;padding-bottom:20px;opacity:0.8;text-align:center">
+    <p style="font-size:10px;font-weight:700;color:#002855;letter-spacing:2px">© <span id="year"></span> GHOTI MARKET TOOLS</p>
+</footer>
+<script>document.getElementById('year').innerText = new Date().getFullYear();</script>
 
 </body>
 </html>
