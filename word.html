@@ -3,207 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Counter Free - Count Words, Characters & Lines Online Free</title>
+    <meta name="robots" content="index, follow">
+    <title>Word Counter</title>
     
-    <meta name="google-site-verification" content="e1rpMgy74_ulkusxQn4m4xUiqiqd2O2o06iLOM5ldZY" />
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7690803775663030" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://tools.ghotimarket.com/word.html">
+    <link rel="icon" type="image/png" href="https://tools.ghotimarket.com/logo.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Free online Pro Word Counter by GHOTI MARKET Tools. Count words, characters, lines, and paragraphs instantly and accurately. 100% secure and free.">
+    <meta name="keywords" content="word counter, character counter, text analyzer, ghoti market tools, online word count">
+    <meta name="author" content="GHOTI MARKET">
     
-    <script src="https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pro Word Counter - GHOTI MARKET Tools">
+    <meta property="og:description" content="Count words, characters, lines, and paragraphs instantly and accurately with GHOTI MARKET Tools.">
+    <meta property="og:image" content="https://tools.ghotimarket.com/logo.png">
+    <meta property="og:url" content="https://tools.ghotimarket.com/word.html">
+    <meta name="theme-color" content="#002855">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Hind+Siliguri:wght@400;700&display=swap');
-        
-        /* মার্জিন ও প্যাডিং জিরো রিসেট ফিক্স */
-        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
-        
-        body { 
-            font-family: 'Outfit', 'Hind Siliguri', sans-serif; 
-            background: #0b0e14; 
-            color: white; 
-            display: block !important;
-            padding: 24px 16px !important;
-        }
-        .glass { 
-            background: rgba(255, 255, 255, 0.03); 
-            backdrop-filter: blur(15px); 
-            border: 1px solid rgba(255, 255, 255, 0.08); 
-            border-radius: 2.5rem !important; 
-            padding: 32px !important;
-        }
-        .stat-box { 
-            background: rgba(59, 130, 246, 0.05); 
-            border: 1px solid rgba(59, 130, 246, 0.1); 
-            border-radius: 1.5rem !important; 
-            padding: 24px !important; 
-            text-align: center; 
-            transition: 0.3s; 
-        }
-        .stat-box:hover { border-color: #3b82f6; background: rgba(59, 130, 246, 0.1); }
-        .text-area { 
-            background: #161b22; 
-            border: 2px solid #30363d; 
-            border-radius: 20px !important; 
-            padding: 20px !important; 
-            color: #e6edf3; 
-            outline: none; 
-            width: 100%; 
-            height: 250px; 
-            transition: 0.3s; 
-            resize: none; 
-            font-size: 1.1rem; 
-        }
-        .text-area:focus { border-color: #3b82f6; box-shadow: 0 0 20px rgba(59, 130, 246, 0.15); }
+        :root{--ghotinavy:#002855;--ghotiorange:#FF8C00;--ghotilight:#00A8E8;--bg:#F0F4F8}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Outfit','Hind Siliguri',sans-serif;background:var(--bg);color:#1e293b;min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}
 
-        /* নো-গ্যাপ রেসপন্সিভ অ্যাড জোন */
-        .ad-zone {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            text-align: center;
-            margin: 15px auto !important;
-            padding: 0 !important;
-            clear: both;
-            overflow: hidden;
-        }
-        .ad-zone iframe, .ad-zone ins { display: inline-block; min-height: 0px; }
+        /* Header */
+        .gradient-bg{background:linear-gradient(135deg,#002855 0%,#004AAD 100%);color:#fff;box-shadow:0 20px 25px -5px rgba(0,0,0,.1);position:relative;overflow:hidden}
+        .pattern-bg{position:absolute;inset:0;opacity:.1;background-image:url('https://www.transparenttextures.com/patterns/cubes.png');pointer-events:none}
+        .header-container{max-width:1280px;margin:0 auto;padding:24px 16px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:10}
+        .logo-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+        .logo-img{width:48px;height:48px;border-radius:12px;background:#fff;padding:4px;box-shadow:0 4px 6px rgba(0,0,0,.1);transition:.3s;object-fit:contain}
+        .logo-link:hover .logo-img{transform:scale(1.05)}
+        .logo-text{font-size:20px;font-weight:900;letter-spacing:-0.5px}
+        .logo-text span{color:var(--ghotilight)}
+        .btn-market{background:var(--ghotiorange);color:#fff;font-weight:700;padding:8px 20px;border-radius:12px;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:14px;transition:.3s;box-shadow:0 4px 6px rgba(0,0,0,.1)}
+        .btn-market:hover{background:#e67e00;transform:translateY(-2px)}
 
-        .flex-ad-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            width: 100%;
-            margin: 20px auto !important;
-            padding: 0 !important;
-        }
+        /* Banner */
+        .banner{display:block;width:100%;max-width:981px;margin:24px auto;border-radius:16px;overflow:hidden;box-shadow:0 10px 25px rgba(0,40,85,.15);transition:.3s}
+        .banner:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(255,140,0,.25)}
+        .banner img{width:100%;height:auto;display:block}
+        @media(max-width:768px){.banner{margin:16px auto;border-radius:12px}}
+
+        /* Main */
+        .container{max-width:896px;margin:32px auto;padding:0 16px;width:100%}
+        .glass{background:#fff;border:1px solid #e5e7eb;border-radius:32px;padding:32px;box-shadow:0 20px 25px -5px rgba(0,40,85,.08)}
+        
+        .title-bar{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:32px;padding-bottom:16px;border-bottom:1px solid #f1f5f9}
+        @media(min-width:640px){.title-bar{flex-direction:row;align-items:center}}
+        .title-left{display:flex;align-items:center;gap:12px}
+        .icon-box{background:var(--ghotinavy);color:#fff;padding:12px;border-radius:16px}
+        .icon-box i{font-size:24px}
+        .tool-title{font-size:24px;font-weight:900;color:var(--ghotinavy);text-transform:uppercase;letter-spacing:-0.5px}
+        @media(min-width:768px){.tool-title{font-size:28px}}
+        .sub-title{color:#64748b;font-size:12px;margin-top:2px}
+        .btn-lang{background:rgba(0,40,85,.1);color:var(--ghotinavy);border:1px solid rgba(0,40,85,.2);border-radius:12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:10px 20px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:.3s}
+        .btn-lang:hover{background:var(--ghotiorange);color:#fff;border-color:var(--ghotiorange)}
+        .btn-lang i{color:var(--ghotilight)}
+
+        /* Stats */
+        .stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:24px}
+        @media(min-width:768px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+        .stat-box{background:rgba(0,168,232,.05);border:1px solid rgba(0,168,232,.15);border-radius:20px;padding:20px;text-align:center;transition:.3s}
+        .stat-box:hover{border-color:var(--ghotiorange);background:rgba(255,140,0,.05);transform:translateY(-3px)}
+        .stat-label{font-size:12px;font-weight:700;color:var(--ghotilight);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+        .stat-value{font-size:28px;font-weight:900;color:var(--ghotinavy)}
+
+        /* Textarea */
+        .text-area{background:#F8FAFC;border:2px solid #cbd5e1;border-radius:20px;padding:20px;color:var(--ghotinavy);outline:none;width:100%;height:250px;transition:.3s;resize:vertical;font-size:17px;margin-bottom:24px;font-family:inherit}
+        .text-area:focus{border-color:var(--ghotiorange);box-shadow:0 0 15px rgba(255,140,0,.15);background:#fff}
+
+        /* Buttons */
+        .btn-group{display:flex;flex-wrap:wrap;gap:16px}
+        .btn{font-weight:700;border-radius:12px;text-transform:uppercase;font-size:12px;letter-spacing:1px;padding:12px 24px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:.3s;border:none}
+        .btn-clear{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#dc2626}
+        .btn-clear:hover{background:#dc2626;color:#fff}
+        .btn-copy{background:var(--ghotiorange);border:1px solid #ea580c;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+        .btn-copy:hover{background:#e67e00}
+
+        /* Footer */
+        .footer{background:#fff;border-top:1px solid #e5e7eb;margin-top:48px;padding:24px 0;text-align:center}
+        .footer-container{max-width:1280px;margin:0 auto;padding:0 16px}
+        .footer p{color:#64748b;font-size:14px;margin-bottom:4px}
+        .footer a{color:var(--ghotiorange);font-weight:700;text-decoration:none}
+        .footer a:hover{text-decoration:underline}
+        .footer small{color:#94a3b8;font-size:12px;letter-spacing:1px}
     </style>
 </head>
-<body class="flex flex-col items-center">
+<body>
 
-    <div class="ad-zone">
-        <script>
-          atOptions = {
-            'key' : 'af68843b76517bf06501f2675e28c230',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/af68843b76517bf06501f2675e28c230/invoke.js"></script>
-    </div>
-
-    <div class="ad-zone">
-        <script>
-          atOptions = {
-            'key' : '8f5a5062f41818ce64c1a11030133401',
-            'format' : 'iframe',
-            'height' : 60,
-            'width' : 468,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/8f5a5062f41818ce64c1a11030133401/invoke.js"></script>
-    </div>
-
-    <div class="ad-zone" style="margin-bottom: 20px !important;">
-        <script>
-          atOptions = {
-            'key' : 'a5e06faacfb9b3dc7e904457b5f78406',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highperformanceformat.com/a5e06faacfb9b3dc7e904457b5f78406/invoke.js"></script>
-    </div>
-
-    <main class="w-full max-w-4xl glass shadow-2xl relative overflow-hidden">
-        <div class="flex justify-between items-center" style="margin-bottom: 32px !important;">
-            <h1 id="toolTitle" class="text-3xl font-black italic tracking-tighter text-blue-400 uppercase">Word Counter Pro</h1>
-            <button onclick="toggleLang()" class="bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded-full text-xs font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all" style="padding: 8px 24px !important;">BN / EN</button>
+    <!-- Header -->
+    <header class="gradient-bg">
+        <div class="pattern-bg"></div>
+        <div class="header-container">
+            <a href="https://tools.ghotimarket.com/" class="logo-link">
+                <img src="https://tools.ghotimarket.com/logo.png" alt="Logo" class="logo-img">
+                <span class="logo-text">GHOTI MARKET<span> Tools</span></span>
+            </a>
+            <a href="https://ghotimarket.com" target="_blank" class="btn-market">
+                <i class="fa-solid fa-shop"></i> <span>GHOTI MARKET</span>
+            </a>
         </div>
+    </header>
 
-        <div class="grid grid-cols-2 md:grid-cols-4" style="gap: 16px !important; margin-bottom: 32px !important;">
-            <div class="stat-box">
-                <p id="labelWords" class="text-[10px] font-black text-blue-500 uppercase tracking-widest" style="margin-bottom: 4px !important;">Words</p>
-                <p id="wordCount" class="text-3xl font-black">0</p>
-            </div>
-            <div class="stat-box">
-                <p id="labelChars" class="text-[10px] font-black text-blue-500 uppercase tracking-widest" style="margin-bottom: 4px !important;">Characters</p>
-                <p id="charCount" class="text-3xl font-black">0</p>
-            </div>
-            <div class="stat-box">
-                <p id="labelLines" class="text-[10px] font-black text-blue-500 uppercase tracking-widest" style="margin-bottom: 4px !important;">Lines</p>
-                <p id="lineCount" class="text-3xl font-black">0</p>
-            </div>
-            <div class="stat-box">
-                <p id="labelParagraphs" class="text-[10px] font-black text-blue-500 uppercase tracking-widest" style="margin-bottom: 4px !important;">Paragraphs</p>
-                <p id="paraCount" class="text-3xl font-black">0</p>
-            </div>
-        </div>
+    <!-- Banner -->
+    <a class="banner" href="https://ghotimarket.com" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0000000002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET Banner">
+    </a>
 
-        <textarea id="textInput" class="text-area" placeholder="Start typing or paste your content here..." oninput="updateStats()"></textarea>
-        
-        <div class="ad-zone" style="margin-top: 24px !important; margin-bottom: 24px !important;">
-            <script>
-              atOptions = {
-                'key' : '477db1ddaffe6205fad66ddcfeaec244',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
-        </div>
+    <!-- Main -->
+    <main class="container">
+        <div class="glass">
+            <div class="title-bar">
+                <div class="title-left">
+                    <div class="icon-box"><i class="fa-solid fa-file-word"></i></div>
+                    <div>
+                        <h1 id="toolTitle" class="tool-title">Pro Word Counter</h1>
+                        <p id="subTitle" class="sub-title">Analyze your text instantly with high accuracy.</p>
+                    </div>
+                </div>
+                <button onclick="toggleLang()" class="btn-lang">
+                    <i class="fa-solid fa-globe"></i> <span id="langBtnText">বাংলা / EN</span>
+                </button>
+            </div>
 
-        <div class="flex flex-wrap" style="margin-top: 24px !important; gap: 16px !important;">
-            <button onclick="clearText()" class="bg-red-600/10 border border-red-500/30 text-red-500 font-bold rounded-xl hover:bg-red-600 hover:text-white transition-all uppercase text-xs tracking-widest" style="padding: 12px 32px !important;">Clear Text</button>
-            <button onclick="copyText()" class="bg-blue-600 border border-blue-500 text-white font-bold rounded-xl hover:bg-blue-700 transition-all uppercase text-xs tracking-widest" style="padding: 12px 32px !important;">Copy Text</button>
+            <div class="stats-grid">
+                <div class="stat-box"><p id="labelWords" class="stat-label">Words</p><p id="wordCount" class="stat-value">0</p></div>
+                <div class="stat-box"><p id="labelChars" class="stat-label">Characters</p><p id="charCount" class="stat-value">0</p></div>
+                <div class="stat-box"><p id="labelLines" class="stat-label">Lines</p><p id="lineCount" class="stat-value">0</p></div>
+                <div class="stat-box"><p id="labelParagraphs" class="stat-label">Paragraphs</p><p id="paraCount" class="stat-value">0</p></div>
+            </div>
+
+            <textarea id="textInput" class="text-area" placeholder="Start typing or paste your content here..." oninput="updateStats()"></textarea>
+            
+            <div class="btn-group">
+                <button onclick="clearText()" class="btn btn-clear"><i class="fa-solid fa-trash-can"></i> <span id="clearBtnText">Clear Text</span></button>
+                <button onclick="copyText()" class="btn btn-copy"><i class="fa-solid fa-copy"></i> <span id="copyBtnText">Copy Text</span></button>
+            </div>
         </div>
     </main>
 
-    <div class="flex-ad-container">
-        <div class="ad-zone" style="max-width: 340px;">
-            <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
-            <div id="container-14e25f0c3055f1c538d471f457a3c6ed"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Powered by <a href="https://ghotimarket.com" target="_blank">GHOTI MARKET</a></p>
+            <small>© <span id="year"></span> GHOTI MARKET TOOLS | ALL RIGHTS RESERVED</small>
         </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : '7adc470a63e21ae91144f6db960a0703',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/7adc470a63e21ae91144f6db960a0703/invoke.js"></script>
-        </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : 'b95a7fa8fa96adb7bd89e20fe3cb68c4',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/b95a7fa8fa96adb7bd89e20fe3cb68c4/invoke.js"></script>
-        </div>
-    </div>
+    </footer>
 
     <script>
         let isEnglish = true;
-
         function updateStats() {
             const text = document.getElementById('textInput').value.trim();
             const words = text ? text.split(/\s+/).filter(word => word.length > 0).length : 0;
@@ -214,28 +164,33 @@
             const paragraphs = text ? text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length : 0;
             document.getElementById('paraCount').innerText = paragraphs.toLocaleString();
         }
-
         function clearText() {
             document.getElementById('textInput').value = '';
             updateStats();
         }
-
         function copyText() {
             const text = document.getElementById('textInput');
+            if(!text.value) {
+                alert(isEnglish ? 'Text box is empty!' : 'টেক্সট বক্স খালি!');
+                return;
+            }
             text.select();
-            document.execCommand('copy');
-            alert(isEnglish ? 'Text copied to clipboard!' : 'টেক্সট কপি করা হয়েছে!');
+            navigator.clipboard.writeText(text.value);
+            alert(isEnglish ? 'Text copied to clipboard!' : 'টেক্সট সফলভাবে কপি করা হয়েছে!');
         }
-
         function toggleLang() {
             isEnglish = !isEnglish;
-            document.getElementById('toolTitle').innerText = isEnglish ? "Word Counter Pro" : "ওয়ার্ড কাউন্টার প্রো";
+            document.getElementById('toolTitle').innerText = isEnglish ? "Pro Word Counter" : "প্রো ওয়ার্ড কাউন্টার";
+            document.getElementById('subTitle').innerText = isEnglish ? "Analyze your text instantly with high accuracy." : "খুব সহজেই আপনার লেখার শব্দ, অক্ষর ও প্যারাগ্রাফ গণনা করুন।";
             document.getElementById('labelWords').innerText = isEnglish ? "Words" : "শব্দ";
             document.getElementById('labelChars').innerText = isEnglish ? "Characters" : "অক্ষর";
             document.getElementById('labelLines').innerText = isEnglish ? "Lines" : "লাইন";
             document.getElementById('labelParagraphs').innerText = isEnglish ? "Paragraphs" : "প্যারাগ্রাফ";
+            document.getElementById('clearBtnText').innerText = isEnglish ? "Clear Text" : "রিসেট করুন";
+            document.getElementById('copyBtnText').innerText = isEnglish ? "Copy Text" : "কপি করুন";
             document.getElementById('textInput').placeholder = isEnglish ? "Start typing or paste your content here..." : "এখানে আপনার টেক্সট লিখুন বা পেস্ট করুন...";
         }
+        document.getElementById("year").innerText = new Date().getFullYear();
     </script>
 </body>
 </html>
