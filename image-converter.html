@@ -3,301 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Image Converter</title>
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7690803775663030" crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="e1rpMgy74_ulkusxQn4m4xUiqiqd2O2o06iLOM5ldZY"/>
-    <meta name="description" content="Free online Image & PDF converter. Convert JPG, PNG, WEBP, ICO and PDF files instantly in your browser without uploading."/>
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Free Image Converter Online">
-    <meta property="og:description" content="Convert JPG, PNG, WEBP, PDF & ICO instantly in your browser.">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="https://i.ibb.co.com/gbjYBRqg/20260424-120505.png">
-    <link rel="canonical" href="https://tools76.github.io/image-converter.html">
-    
-    <script src="https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js"></script>
+    <title>Free Image Converter - JPG to PNG, WEBP, PDF</title>
+
+    <meta name="description" content="Free online Image Converter by GHOTI MARKET. Convert JPG, PNG, WEBP, PDF instantly in your browser. No upload, 100% private & secure.">
+    <meta name="keywords" content="image converter, jpg to png, png to jpg, webp converter, pdf converter, ghoti market tools, free image converter bangladesh">
+    <meta name="author" content="GHOTI MARKET">
+    <meta name="theme-color" content="#002855">
+    <link rel="canonical" href="https://tools.ghotimarket.com/image-converter.html">
+    <link rel="icon" href="https://tools.ghotimarket.com/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
     <style>
-        /* ফাকা জায়গা চিরতরে বন্ধ করার জন্য */
-        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
-        html, body { width: 100%; height: 100%; background: #f0f2f5; display: block !important; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background: #F0F4F8; color: #1e293b; }
 
-        header { 
-            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); 
-            color: white; 
-            padding: 25px 15px !important; 
-            text-align: center; 
-            border-bottom: 4px solid #ffca28;
+        /* Header */
+        header.main-header {
+            background: linear-gradient(135deg, #002855 0%, #004AAD 100%);
+            color: white;
+            padding: 18px 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+       .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+       .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; font-weight: 900; font-size: 22px; }
+       .brand-logo img { width: 38px; height: 38px; border-radius: 8px; }
+       .brand-logo span { color: #00A8E8; }
 
-        .container { 
-            width: 100%; 
-            max-width: 850px; 
-            margin: 0 auto !important; 
-            padding: 15px !important; 
-            display: block !important;
-        }
+       .container { width: 100%; max-width: 900px; margin: 40px auto; padding: 0 16px; }
 
-        .converter-card { 
-            background: white; 
-            padding: 25px !important; 
-            border-radius: 15px; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+       .hero-text { text-align: center; margin-bottom: 30px; }
+       .hero-text h1 { font-size: 36px; font-weight: 900; color: #002855; text-transform: uppercase; }
+       .hero-text p { color: #64748b; font-weight: 700; font-size: 13px; letter-spacing: 2px; }
+
+      .converter-card {
+            background: white;
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -15px rgba(0,40,85,0.1);
             text-align: center;
-            margin-top: 0 !important;
+            border: 1px solid #e2e8f0;
         }
+        #dropZone {
+            border: 3px dashed #00A8E8; background: #f8fafc; padding: 45px 15px;
+            border-radius: 18px; cursor: pointer; transition: 0.3s;
+        }
+        #dropZone:hover { border-color: #FF8C00; background: #fff7ed; transform: scale(1.01); }
+        select {
+            width: 100%; padding: 16px; border: 2px solid #cbd5e1; border-radius: 14px;
+            font-weight: 800; margin: 20px 0; outline: none; background: #fff;
+            font-size: 15px; color: #002855;
+        }
+        #convertBtn {
+            width: 100%; padding: 18px; background: linear-gradient(135deg, #002855 0%, #004AAD 100%);
+            color: white; font-size: 16px; font-weight: 900; border: none; border-radius: 14px;
+            cursor: pointer; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s;
+            box-shadow: 0 10px 15px -3px rgba(0,40,85,0.2);
+        }
+        #convertBtn:hover { background: #FF8C00; transform: translateY(-3px); }
+        #previewImg { max-height: 180px; margin: 15px auto; display: none; border-radius: 14px; border: 3px solid #e2e8f0; }
 
-        #dropZone { 
-            border: 3px dashed #1e88e5; 
-            background: #f1f8ff; 
-            padding: 35px 15px !important; 
-            border-radius: 12px; 
-            cursor: pointer; 
+        /* GHOTI Banner Ads */
+     .ghoti-banner{
+            display:block; width:100%; max-width:981px; margin:25px auto; border-radius:16px;
+            overflow:hidden; box-shadow:0 10px 25px rgba(0,40,85,.15); transition:.3s;
         }
+     .ghoti-banner:hover{ transform:translateY(-4px); box-shadow:0 15px 35px rgba(255,140,0,.25); }
+     .ghoti-banner img{ width:100%; height:auto; display:block; }
 
-        select { 
-            width: 100%; padding: 14px !important; border: 2px solid #1e88e5; 
-            border-radius: 8px; font-weight: bold; margin: 15px 0 !important; outline: none;
-            background: #fff;
-        }
-        #convertBtn { 
-            width: 100%; padding: 16px !important; background: #1a237e; color: white; 
-            font-size: 17px; font-weight: 900; border: none; border-radius: 8px; 
-            cursor: pointer; text-transform: uppercase;
-        }
-
-        footer { background: #1a237e; color: white; padding: 20px !important; text-align: center; margin-top: 25px !important; }
-        #previewImg { max-height: 140px; margin: 10px auto !important; display: none; border-radius: 8px; }
-
-        /* অ্যাড সেকশন নো-গ্যাপ এবং রেসপন্সিভ কন্ট্রোল */
-        .ad-zone {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            text-align: center;
-            margin: 15px auto !important;
-            padding: 0 !important;
-            clear: both;
-            overflow: hidden;
-        }
-        .ad-zone iframe, .ad-zone ins { display: inline-block; min-height: 0px; }
-
-        .flex-ad-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            width: 100%;
-            margin: 15px auto !important;
-            padding: 0 !important;
-        }
+        /* Footer */
+        footer { background: #002855; color: white; padding: 30px 20px; text-align: center; margin-top: 50px; }
+        footer a { color: #FF8C00; text-decoration: none; font-weight: 900; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>ELITE FILE CONVERTER</h1>
-    <p>Professional Secure Processing Engine 2026</p>
+<!-- Header with Logo -->
+<header class="main-header">
+    <div class="header-container">
+        <a href="https://ghotimarket.com" class="brand-logo">
+            <img src="https://tools.ghotimarket.com/logo.png" alt="GHOTI MARKET Logo">
+            GHOTI MARKET <span>Tools</span>
+        </a>
+    </div>
 </header>
 
-<div class="ad-zone">
-    <script>
-      atOptions = {
-        'key' : 'af68843b76517bf06501f2675e28c230',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highperformanceformat.com/af68843b76517bf06501f2675e28c230/invoke.js"></script>
-</div>
-
-<div class="ad-zone">
-    <script>
-      atOptions = {
-        'key' : '8f5a5062f41818ce64c1a11030133401',
-        'format' : 'iframe',
-        'height' : 60,
-        'width' : 468,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highperformanceformat.com/8f5a5062f41818ce64c1a11030133401/invoke.js"></script>
-</div>
+<!-- GHOTI AD 1 - Top Banner -->
+<a class="ghoti-banner" href="https://ghotimarket.com" target="_blank">
+    <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET - Best Digital Marketplace in Bangladesh">
+</a>
 
 <div class="container">
+    <div class="hero-text">
+        <h1>Image <span style="color:#FF8C00">Converter</span> Pro</h1>
+        <p>SECURE • FAST • 100% FREE</p>
+    </div>
+
     <div class="converter-card">
-        
-        <div class="ad-zone" style="margin-bottom: 15px !important;">
-            <script>
-              atOptions = {
-                'key' : 'a5e06faacfb9b3dc7e904457b5f78406',
-                'format' : 'iframe',
-                'height' : 50,
-                'width' : 320,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/a5e06faacfb9b3dc7e904457b5f78406/invoke.js"></script>
-        </div>
+        <!-- GHOTI AD 2 - In Content -->
+        <a class="ghoti-banner" style="margin-bottom:25px" href="https://ghotimarket.com/tools" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Use 20+ Free Tools">
+        </a>
 
         <div id="dropZone">
-            <input type="file" id="fileInput" style="display: none;" accept="image/*,application/pdf">
+            <input type="file" id="fileInput" style="display: none;" accept="image/*">
             <div id="uploadUi">
-                <span style="font-size: 45px;">📂</span>
-                <h2 style="margin-top: 10px !important; font-weight: 800; color: #0d47a1; font-size: 20px;">SELECT IMAGE OR PDF</h2>
-                <p style="font-size: 13px; color: #666; margin-top: 5px !important;">Tap to upload or Drag & Drop</p>
+                <i class="fa-solid fa-cloud-arrow-up" style="font-size: 50px; color: #00A8E8;"></i>
+                <h2 style="margin-top: 15px; font-weight: 900; color: #002855; font-size: 22px;">SELECT YOUR IMAGE</h2>
+                <p style="font-size: 13px; color: #64748b; font-weight: 600;">Click to upload or Drag & Drop JPG, PNG, WEBP</p>
             </div>
             <div id="fileInfo" style="display: none;">
                 <img id="previewImg">
-                <div id="pdfIcon" style="font-size: 55px; display: none;">📄</div>
-                <p id="fileName" style="font-weight: bold; color: #1e88e5; margin-top: 8px !important; font-size: 14px;"></p>
+                <p id="fileName" style="font-weight: 800; color: #004AAD; margin-top: 10px;"></p>
             </div>
         </div>
 
         <div id="formatSection" style="display: none;">
+            <label style="font-weight:800;color:#002855;font-size:12px;letter-spacing:1px">SELECT OUTPUT FORMAT:</label>
             <select id="outputFormat">
-                <option value="jpeg">Convert to JPG</option>
-                <option value="png">Convert to PNG</option>
-                <option value="pdf">Convert to PDF</option>
-                <option value="webp">Convert to WEBP</option>
-                <option value="ico">Convert to ICO</option>
+                <option value="jpeg">Convert to JPG - Best for Photos</option>
+                <option value="png">Convert to PNG - Best for Quality</option>
+                <option value="webp">Convert to WEBP - Best for Web</option>
+                <option value="pdf">Convert to PDF - For Documents</option>
             </select>
-            <button id="convertBtn">Process & Download Now ✨</button>
-        </div>
-
-        <div class="ad-zone" style="margin-top: 20px !important;">
-            <script>
-              atOptions = {
-                'key' : '477db1ddaffe6205fad66ddcfeaec244',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
+            <button id="convertBtn"><i class="fa-solid fa-wand-magic-sparkles"></i> Convert & Download Now</button>
         </div>
     </div>
 
-    <div class="w-full flex-ad-container">
-        <div class="ad-zone" style="max-width: 340px;">
-            <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
-            <div id="container-14e25f0c3055f1c538d471f457a3c6ed"></div>
-        </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : '7adc470a63e21ae91144f6db960a0703',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/7adc470a63e21ae91144f6db960a0703/invoke.js"></script>
-        </div>
-
-        <div class="ad-zone" style="max-width: 170px;">
-            <script>
-              atOptions = {
-                'key' : 'b95a7fa8fa96adb7bd89e20fe3cb68c4',
-                'format' : 'iframe',
-                'height' : 600,
-                'width' : 160,
-                'params' : {}
-              };
-            </script>
-            <script src="https://www.highperformanceformat.com/b95a7fa8fa96adb7bd89e20fe3cb68c4/invoke.js"></script>
-        </div>
-    </div>
+    <!-- GHOTI AD 3 - Bottom Banner -->
+    <a class="ghoti-banner" href="https://ghotimarket.com/shop" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Shop Software, Gift Cards">
+    </a>
 </div>
 
 <footer>
-    <p>© 2026 Elite Digital Studio | Chhatak, Bangladesh</p>
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <p style="margin-bottom: 8px;">Powered by <a href="https://ghotimarket.com" target="_blank">GHOTI MARKET</a></p>
+        <p style="color: #94a3b8; font-size: 10px; letter-spacing: 2px;">© <span id="year"></span> GHOTI MARKET TOOLS • ALL RIGHTS RESERVED</p>
+    </div>
 </footer>
 
 <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    const { jsPDF } = window.jspdf;
     const fileInput = document.getElementById('fileInput');
     const dropZone = document.getElementById('dropZone');
-    const fileInfo = document.getElementById('fileInfo');
-    const uploadUi = document.getElementById('uploadUi');
-    const previewImg = document.getElementById('previewImg');
-    const pdfIcon = document.getElementById('pdfIcon');
-    const formatSection = document.getElementById('formatSection');
-    const outputFormat = document.getElementById('outputFormat');
-
-    let uploadedFileSrc = "";
-    let isPdfFile = false;
+    let uploadedFile = null;
+    let imageDataUrl = "";
 
     dropZone.onclick = () => fileInput.click();
+    fileInput.onchange = (e) => handleFile(e.target.files[0]);
+    dropZone.ondragover = (e) => { e.preventDefault(); dropZone.style.borderColor = '#FF8C00'; };
+    dropZone.ondragleave = () => dropZone.style.borderColor = '#00A8E8';
+    dropZone.ondrop = (e) => { e.preventDefault(); handleFile(e.dataTransfer.files[0]); };
 
-    fileInput.onchange = (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
+    function handleFile(file) {
+        if (!file ||!file.type.startsWith('image/')) return alert("Please select a valid image file");
+        uploadedFile = file;
+        document.getElementById('uploadUi').style.display = 'none';
+        document.getElementById('fileInfo').style.display = 'block';
+        document.getElementById('formatSection').style.display = 'block';
+        document.getElementById('fileName').innerText = "File: " + file.name;
 
-        uploadUi.style.display = 'none';
-        fileInfo.style.display = 'block';
-        formatSection.style.display = 'block';
-        document.getElementById('fileName').innerText = file.name;
-
-        if (file.type.startsWith('image/')) {
-            isPdfFile = false;
-            const reader = new FileReader();
-            reader.onload = (ev) => {
-                previewImg.src = ev.target.result;
-                uploadedFileSrc = ev.target.result; // সেভ ইমেজ সোর্স
-                previewImg.style.display = 'block';
-                pdfIcon.style.display = 'none';
-            };
-            reader.readAsDataURL(file);
-        } else if (file.type === 'application/pdf') {
-            isPdfFile = true;
-            previewImg.style.display = 'none';
-            pdfIcon.style.display = 'block';
-            const reader = new FileReader();
-            reader.onload = (ev) => {
-                uploadedFileSrc = ev.target.result;
-            };
-            reader.readAsDataURL(file);
-        }
-    };
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            imageDataUrl = ev.target.result;
+            document.getElementById('previewImg').src = imageDataUrl;
+            document.getElementById('previewImg').style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+    }
 
     document.getElementById('convertBtn').onclick = () => {
-        const file = fileInput.files[0];
-        if (!file) return;
+        if (!uploadedFile) return alert("Please select a file first!");
 
-        const targetFormat = outputFormat.value;
-        const cleanName = file.name.split('.')[0];
+        const targetFormat = document.getElementById('outputFormat').value;
+        const cleanName = uploadedFile.name.split('.')[0];
+        const img = new Image();
 
-        // ফিক্স লজিক: ইমেজ থেকে PDF বানানোর সফল ক্লায়েন্ট-সাইড মেথড
-        if (!isPdfFile && targetFormat === 'pdf') {
-            const img = new Image();
-            img.onload = function() {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                
-                // ইমেজ ডেটাকে সরাসরি ভ্যালিড PDF ডাটা-ইউআরএল এ কনভার্ট করার স্ট্রাকচার
-                const imgData = canvas.toDataURL('image/jpeg', 1.0);
-                localStorage.setItem('originalFile', imgData);
-                localStorage.setItem('targetFormat', 'pdf');
-                localStorage.setItem('fileName', cleanName);
-                window.location.href = 'image-converterdownload.html';
-            };
-            img.src = uploadedFileSrc;
-        } else {
-            // সাধারণ অন্য ফরম্যাটের প্রসেসিং স্ট্রাকচার
-            localStorage.setItem('originalFile', uploadedFileSrc);
-            localStorage.setItem('targetFormat', targetFormat);
-            localStorage.setItem('fileName', cleanName);
-            window.location.href = 'image-converterdownload.html';
-        }
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+
+            if(targetFormat === 'jpeg') {
+                ctx.fillStyle = "#FFFFFF";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+            ctx.drawImage(img, 0, 0);
+
+            if(targetFormat === 'pdf') {
+                const pdf = new jsPDF({
+                    orientation: img.width > img.height? 'l' : 'p',
+                    unit: 'px',
+                    format: [img.width, img.height]
+                });
+                pdf.addImage(canvas.toDataURL('image/jpeg', 0.95), 'JPEG', 0, 0, img.width, img.height);
+                pdf.save(cleanName + '.pdf');
+                return;
+            }
+
+            let mimeType = 'image/' + targetFormat;
+            let quality = targetFormat === 'jpeg'? 0.92 : 1.0;
+            const dataUrl = canvas.toDataURL(mimeType, quality);
+            downloadFile(dataUrl, cleanName + '.' + targetFormat);
+        };
+        img.src = imageDataUrl;
     };
+
+    function downloadFile(dataUrl, filename) {
+        const a = document.createElement('a');
+        a.href = dataUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
 </script>
 
 </body>
