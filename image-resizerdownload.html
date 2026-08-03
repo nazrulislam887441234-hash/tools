@@ -3,61 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Resizer</title>
+    <title>Download Optimized Image - Saved 80% Size | GHOTI MARKET Tools</title>
+
+    <meta name="description" content="Your image is optimized and ready for download. Reduce image size by 80% with GHOTI MARKET AI Resizer. 100% free, private, no server storage.">
+    <meta name="keywords" content="download optimized image, image compressor result, ghoti market tools">
+    <meta name="author" content="GHOTI MARKET">
+    <meta name="theme-color" content="#002855">
+    <link rel="canonical" href="https://tools.ghotimarket.com/image-resizer-download.html">
+    <link rel="icon" href="https://tools.ghotimarket.com/logo.png">
+    <meta name="robots" content="noindex, follow">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght=400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
-        body { font-family: 'Outfit', sans-serif; background: #f8fafc; }
-        /* অ্যাড লোড হওয়ার সময় বা পরে লেআউট যেন ভেঙে না যায় তার ফিক্স */
-        .ad-wrapper { display: flex; justify-content: center; align-items: center; width: 100%; margin: 15px 0; clear: both; }
+        body { font-family: 'Outfit', sans-serif; background: #F0F4F8; }
+
+      .main-header { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); }
+      .brand-logo img { width: 40px; height: 40px; border-radius: 10px; }
+
+      .btn-download { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); transition: all 0.3s ease; }
+      .btn-download:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0, 40, 85, 0.3); background: #FF8C00; }
+
+        /* GHOTI Banner Ads */
+      .ghoti-banner{ display:block; width:100%; max-width:981px; margin:20px auto; border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,40,85,.15); transition:.3s; }
+      .ghoti-banner:hover{ transform:translateY(-4px); box-shadow:0 15px 35px rgba(255,140,0,.25); }
+      .ghoti-banner img{ width:100%; height:auto; display:block; }
     </style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen p-4">
 
-    <div class="ad-wrapper min-h-[250px]">
-        <script type="text/javascript">
-            atOptions = {
-                'key' : '477db1ddaffe6205fad66ddcfeaec244',
-                'format' : 'iframe',
-                'height' : 250,
-                'width' : 300,
-                'params' : {}
-            };
-        </script>
-        <script type="text/javascript" src="https://www.highperformanceformat.com/477db1ddaffe6205fad66ddcfeaec244/invoke.js"></script>
-    </div>
+    <!-- Header -->
+    <header class="main-header w-full py-4 px-6 fixed top-0">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="https://ghotimarket.com" class="brand-logo flex items-center gap-3 text-white font-black text-xl">
+                <img src="https://tools.ghotimarket.com/logo.png" alt="GHOTI MARKET Logo">
+                GHOTI MARKET <span class="text-[#00A8E8]">Tools</span>
+            </a>
+        </div>
+    </header>
 
-    <div class="max-w-xl w-full bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl text-center">
-        <h1 class="text-3xl font-black text-slate-900 mb-6">Optimization Complete!</h1>
-        
-        <div class="mb-8 p-4 bg-blue-50 rounded-3xl inline-block">
+    <!-- GHOTI AD 1 - Top Banner -->
+    <a class="ghoti-banner mt-24" href="https://ghotimarket.com" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET - Best Digital Products">
+    </a>
+
+    <div class="max-w-xl w-full bg-white p-8 md:p-10 rounded-[3rem] shadow-2xl text-center border border-slate-200 mt-6">
+        <div class="text-6xl mb-3">🎉</div>
+        <h1 class="text-3xl font-black text-[#002855] mb-6">Optimization Complete!</h1>
+
+        <div class="mb-8 p-4 bg-[#F0F4F8] rounded-3xl inline-block">
             <img id="resultPreview" class="max-h-64 rounded-2xl mx-auto shadow-md border-4 border-white" src="" alt="Preview">
         </div>
 
         <div class="grid grid-cols-2 gap-4 mb-8">
-            <div class="bg-slate-50 p-4 rounded-2xl">
-                <p class="text-xs font-bold text-slate-400 uppercase">Old Size</p>
-                <p id="oldSizeDisplay" class="font-bold text-red-500">-</p>
+            <div class="bg-red-50 p-4 rounded-2xl border-red-100">
+                <p class="text-xs font-black text-red-500 uppercase tracking-widest">Old Size</p>
+                <p id="oldSizeDisplay" class="font-black text-red-600 text-xl">-</p>
             </div>
-            <div class="bg-green-50 p-4 rounded-2xl">
-                <p class="text-xs font-bold text-green-400 uppercase">Optimized</p>
-                <p id="newSizeDisplay" class="font-bold text-green-600">-</p>
+            <div class="bg-green-50 p-4 rounded-2xl border border-green-100">
+                <p class="text-xs font-black text-green-600 uppercase tracking-widest">Optimized</p>
+                <p id="newSizeDisplay" class="font-black text-green-700 text-xl">-</p>
             </div>
         </div>
 
-        <a id="downloadLink" download="optimized-image.jpg" class="block w-full bg-blue-600 text-white font-black text-xl py-5 rounded-2xl shadow-xl hover:bg-blue-700 transition-all mb-4 cursor-pointer">
-            Download Image
+        <a id="downloadLink" download="optimized-image.jpg" class="btn-download block w-full text-white font-black text-xl py-5 rounded-2xl shadow-xl mb-4 cursor-pointer">
+            <i class="fa-solid fa-download mr-2"></i> Download Optimized Image
         </a>
-        
-        <div class="ad-wrapper my-6">
-            <script async="async" data-cfasync="false" src="https://pl29236068.effectivecpmnetwork.com/14e25f0c3055f1c538d471f457a3c6ed/invoke.js"></script>
-            <div id="container-14e25f0c3055f1c538d471f457a3c6ed" class="w-full"></div>
-        </div>
-        
-        <a href="image-resizer.html" class="text-slate-400 font-bold hover:text-blue-600 transition-colors italic block mt-4">Resize Another Image</a>
+
+        <!-- GHOTI AD 2 - Middle Banner -->
+        <a class="ghoti-banner my-6" href="https://ghotimarket.com/tools" target="_blank">
+            <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Use 20+ Free Tools">
+        </a>
+
+        <a href="image-resizer.html" class="text-[#64748b] font-bold hover:text-[#FF8C00] transition-colors italic block mt-4"><i class="fa-solid fa-arrow-left mr-1"></i> Resize Another Image</a>
     </div>
 
+    <!-- GHOTI AD 3 - Bottom Banner -->
+    <a class="ghoti-banner" href="https://ghotimarket.com/shop" target="_blank">
+        <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Shop Software and Gift Cards">
+    </a>
+
+    <footer class="py-8 text-center">
+        <p class="text-[10px] font-black text-[#002855]/60 tracking-[3px] uppercase">© <span id="year"></span> GHOTI MARKET TOOLS</p>
+    </footer>
+
     <script>
+        document.getElementById('year').innerText = new Date().getFullYear();
         window.onload = () => {
             const imgData = localStorage.getItem('compressedImg');
             const oldSize = localStorage.getItem('oldSize');
@@ -73,11 +106,9 @@
             document.getElementById('oldSizeDisplay').innerText = oldSize + " KB";
             document.getElementById('newSizeDisplay').innerText = newSize + " KB";
             document.getElementById('downloadLink').href = imgData;
-            document.getElementById('downloadLink').download = "optimized-" + imgName;
+            document.getElementById('downloadLink').download = "GHOTI_optimized-" + imgName;
         }
     </script>
-
-    <script type='text/javascript' src='https://pl29236066.effectivecpmnetwork.com/5e/32/85/5e3285c94bc70b4338010c30b7054a1b.js'></script>
 
 </body>
 </html>
