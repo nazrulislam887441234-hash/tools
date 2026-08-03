@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free QR Code Generator with Logo - High Resolution | GHOTI MARKET Tools</title>
+    <title>Free QR Code Generator with Logo </title>
 
     <meta name="description" content="Generate high-resolution branded QR codes with logo and custom frames. Free, secure, permanent QR code generator for businesses by GHOTI MARKET.">
     <meta name="keywords" content="qr code generator, custom qr code, qr with logo, branded qr code, free qr generator, ghoti market tools, bangladesh qr code">
@@ -22,58 +22,58 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Outfit', 'Hind Siliguri', sans-serif; background: #F0F4F8; color: #1e293b; padding: 24px 16px; }
 
-      .hero-title {
+     .hero-title {
             background: linear-gradient(135deg, #002855 0%, #FF8C00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 900;
         }
 
-      .glass-panel {
+     .glass-panel {
             background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px);
             border: 1px solid #e2e8f0; border-radius: 2.5rem;
             box-shadow: 0 20px 40px -15px rgba(0, 40, 85, 0.1); padding: 32px;
         }
 
-      .input-box {
+     .input-box {
             background: #ffffff; border: 2px solid #cbd5e1; transition: all 0.3s;
             padding: 20px; border-radius: 1rem;
         }
-      .input-box:focus { border-color: #FF8C00; box-shadow: 0 0 15px rgba(255,140,0,0.1); }
+     .input-box:focus { border-color: #FF8C00; box-shadow: 0 0 15px rgba(255,140,0,0.1); }
 
-      .frame-option {
+     .frame-option {
             cursor: pointer; transition: 0.3s; background: #ffffff;
             border: 2px solid #e2e8f0; padding: 16px 0; border-radius: 0.75rem;
         }
-      .frame-option.active { border-color: #FF8C00; background: #FFF7ED; transform: scale(1.05); }
+     .frame-option.active { border-color: #FF8C00; background: #FFF7ED; transform: scale(1.05); }
 
-        /* QR Frame Styles */
-      .frame-1 { border: 12px solid var(--qr-color)!important; padding: 25px!important; border-radius: 25px!important; }
-      .frame-2 { border: 6px dashed var(--qr-color)!important; padding: 25px!important; border-radius: 50%!important; }
-      .frame-3 { border-left: 20px solid var(--qr-color)!important; padding: 25px!important; background: white!important; }
-      .frame-4 { outline: 10px double var(--qr-color)!important; outline-offset: 12px!important; padding: 12px!important; }
-      .frame-5 { border: 12px solid var(--qr-color)!important; border-radius: 0 50px 0 50px!important; padding: 25px!important; }
+        /* QR Frame Styles - FIXED */
+     .qr-wrapper { display: inline-block; background: white; }
+     .frame-1 { border: 12px solid var(--qr-color); padding: 25px; border-radius: 25px; }
+     .frame-2 { border: 6px dashed var(--qr-color); padding: 25px; border-radius: 50%; }
+     .frame-3 { border-left: 20px solid var(--qr-color); padding: 25px; }
+     .frame-4 { outline: 10px double var(--qr-color); outline-offset: 12px; padding: 12px; }
+     .frame-5 { border: 12px solid var(--qr-color); border-radius: 0 50px 0 50px; padding: 25px; }
 
-      .btn-gradient {
+     .btn-gradient {
             background: linear-gradient(135deg, #002855 0%, #004AAD 100%);
             box-shadow: 0 15px 35px -10px rgba(0,40,85,0.3); transition: all 0.4s;
             padding: 24px 0; border-radius: 2rem;
         }
-      .btn-gradient:hover { transform: translateY(-3px); background: #FF8C00; }
+     .btn-gradient:hover { transform: translateY(-3px); background: #FF8C00; }
 
-     .main-header { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); padding: 16px 24px; border-radius: 20px; margin-bottom: 24px; }
-     .brand-logo img { width: 40px; height: 40px; border-radius: 10px; }
+    .main-header { background: linear-gradient(135deg, #002855 0%, #004AAD 100%); padding: 16px 24px; border-radius: 20px; margin-bottom: 24px; }
+    .brand-logo img { width: 40px; height: 40px; border-radius: 10px; }
 
         /* GHOTI Banner Ads */
-     .ghoti-banner{ display:block; width:100%; max-width:981px; margin:20px auto; border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,40,85,.15); transition:.3s; }
-     .ghoti-banner:hover{ transform:translateY(-4px); }
-     .ghoti-banner img{ width:100%; height:auto; display:block; }
+    .ghoti-banner{ display:block; width:100%; max-width:981px; margin:20px auto; border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,40,85,.15); transition:.3s; }
+    .ghoti-banner:hover{ transform:translateY(-4px); }
+    .ghoti-banner img{ width:100%; height:auto; display:block; }
     </style>
 </head>
 <body>
 
     <div class="max-w-6xl mx-auto">
-        <!-- Header -->
         <header class="main-header flex justify-between items-center">
             <a href="https://ghotimarket.com" class="brand-logo flex items-center gap-3 text-white font-black text-xl">
                 <img src="https://tools.ghotimarket.com/logo.png" alt="GHOTI MARKET Logo">
@@ -81,7 +81,6 @@
             </a>
         </header>
 
-        <!-- GHOTI AD 1 -->
         <a class="ghoti-banner" href="https://ghotimarket.com" target="_blank">
             <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="GHOTI MARKET">
         </a>
@@ -93,8 +92,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
-            <!-- Left Panel -->
-            <div class="lg:col-span-5 flex-col gap-8">
+            <div class="lg:col-span-5 flex flex-col gap-8">
                 <div class="glass-panel flex flex-col gap-6">
                     <div class="flex flex-col gap-2">
                         <label class="block text-xs font-black text-[#002855] uppercase tracking-widest ml-1">1. Content / Link</label>
@@ -112,9 +110,9 @@
                             <button onclick="document.getElementById('logoInput').click()" class="w-full h-14 bg-[#F0F4F8] hover:bg-[#e2e8f0] border-slate-200 rounded-2xl text-[10px] font-black uppercase transition text-[#002855]"><i class="fa-solid fa-upload mr-1"></i> Upload Icon</button>
                         </div>
                     </div>
+                    <div id="logo-name" class="text-xs text-[#10b981] font-bold hidden"><i class="fa-solid fa-check"></i> Logo Selected</div>
                 </div>
 
-                <!-- GHOTI AD 2 -->
                 <a class="ghoti-banner" href="https://ghotimarket.com/tools" target="_blank">
                     <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="20+ Free Tools">
                 </a>
@@ -134,14 +132,16 @@
                 <button onclick="generateQR()" class="btn-gradient w-full font-black text-2xl text-white uppercase tracking-[0.2em]"><i class="fa-solid fa-qrcode mr-2"></i> Generate QR</button>
             </div>
 
-            <!-- Right Panel -->
-            <div class="lg:col-span-7 flex-col items-center">
-                <div class="glass-panel w-full flex-col items-center justify-center min-h-[550px] relative p-10">
-                    <div id="capture-area" class="bg-white rounded-3xl relative shadow-2xl transition-all duration-500 p-10">
-                        <div id="qrcode-container">
-                            <div id="qrcode"></div>
+            <div class="lg:col-span-7 flex flex-col items-center">
+                <div class="glass-panel w-full flex flex-col items-center justify-center min-h-[550px] relative p-10">
+                    <!-- WRAPPER ADDED FOR FULL DOWNLOAD -->
+                    <div id="capture-area" class="qr-wrapper">
+                        <div id="qrcode-box" class="bg-white rounded-3xl relative shadow-2xl transition-all duration-500 p-10">
+                            <div id="qrcode-container">
+                                <div id="qrcode"></div>
+                            </div>
+                            <img id="logo-preview" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-2xl hidden border-4 border-white shadow-2xl bg-white object-contain p-1">
                         </div>
-                        <img id="logo-preview" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-2xl hidden border-4 border-white shadow-xl bg-white object-contain">
                     </div>
 
                     <div id="download-section" class="hidden mt-12">
@@ -151,7 +151,6 @@
             </div>
         </div>
 
-        <!-- GHOTI AD 3 -->
         <a class="ghoti-banner" href="https://ghotimarket.com/shop" target="_blank">
             <img src="https://i.ibb.co/Y4jBRrSg/file-0002a081f5b7c5996f48098b30.png" alt="Shop Digital Products">
         </a>
@@ -175,6 +174,7 @@
         const qrcodeDiv = document.getElementById("qrcode");
         const logoPreview = document.getElementById("logo-preview");
         const captureArea = document.getElementById("capture-area");
+        const qrcodeBox = document.getElementById("qrcode-box");
 
         document.getElementById('logoInput').addEventListener('change', function(e) {
             const file = e.target.files[0];
@@ -183,8 +183,12 @@
                 reader.onload = function(event) {
                     logoPreview.src = event.target.result;
                     logoPreview.classList.remove('hidden');
+                    document.getElementById('logo-name').classList.remove('hidden');
                 }
                 reader.readAsDataURL(file);
+            } else {
+                logoPreview.classList.add('hidden');
+                document.getElementById('logo-name').classList.add('hidden');
             }
         });
 
@@ -197,9 +201,9 @@
 
         function updateFrameUI() {
             const color = document.getElementById('qrColor').value;
-            captureArea.style.setProperty('--qr-color', color);
-            captureArea.className = "bg-white rounded-3xl relative transition-all duration-500 shadow-2xl";
-            if(currentFrame > 0) captureArea.classList.add(`frame-${currentFrame}`);
+            qrcodeBox.style.setProperty('--qr-color', color);
+            qrcodeBox.className = "bg-white rounded-3xl relative shadow-2xl transition-all duration-500 p-10";
+            if(currentFrame > 0) qrcodeBox.classList.add(`frame-${currentFrame}`);
         }
 
         function generateQR() {
@@ -223,12 +227,23 @@
             captureArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
+        // FIXED DOWNLOAD FUNCTION
         function downloadQR() {
-            html2canvas(captureArea, { backgroundColor: null, scale: 3, useCORS: true }).then(canvas => {
+            html2canvas(captureArea, {
+                backgroundColor: "#ffffff",
+                scale: 3,
+                useCORS: true,
+                logging: false,
+                width: captureArea.scrollWidth,
+                height: captureArea.scrollHeight
+            }).then(canvas => {
                 const link = document.createElement("a");
                 link.download = "GHOTI-Branded-QR.png";
                 link.href = canvas.toDataURL("image/png");
                 link.click();
+            }).catch(err => {
+                alert("Download failed. Please try again.");
+                console.error(err);
             });
         }
     </script>
